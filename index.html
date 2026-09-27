@@ -66,6 +66,22 @@
   .toolbar label.chk { display: inline-flex; align-items: center; gap: 8px; color: var(--muted); cursor: pointer; }
   .count { margin-left: auto; color: var(--muted); font-size: 14px; }
 
+  /* ---------- Connexion Twitch ---------- */
+  .auth { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .auth .twitch-btn {
+    display: inline-flex; align-items: center; gap: 8px; padding: 9px 16px; border-radius: 3px;
+    border: 0; background: #9146FF; color: #fff; font-weight: 700; font-size: 14px;
+    text-decoration: none; cursor: pointer;
+  }
+  .auth .twitch-btn:hover { background: #7c2df0; }
+  .auth .user { display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--text); }
+  .auth .user b { color: #fff; }
+  .auth .credits-pill { padding: 3px 10px; border-radius: 12px; background: rgba(102,192,244,.18); color: var(--accent); font-weight: 700; font-size: 12.5px; white-space: nowrap; }
+  .auth .logout { background: none; border: 0; color: var(--muted); text-decoration: underline; cursor: pointer; font-size: 13px; padding: 0; }
+  .auth .logout:hover { color: var(--text); }
+  .reserve-btn { border: 0; cursor: pointer; font-size: 15px; padding: 12px 20px; }
+  .reserve-btn:disabled { opacity: .6; cursor: default; }
+
   /* ---------- Grille ---------- */
   .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 22px; }
   .card {
@@ -172,6 +188,7 @@
     </select>
     <label class="chk"><input type="checkbox" id="onlyFree"> Encore disponibles seulement</label>
     <span class="count" id="count" aria-live="polite"></span>
+    <div class="auth" id="auth"></div>
   </div>
 
   <section class="grid" id="grid" aria-label="Liste des jeux"></section>
@@ -185,9 +202,16 @@
 
 <script>
 (() => {
+  // ---- Configuration (valeurs publiques, sans risque à laisser en clair) ----
+  const SUPABASE_URL = 'https://ednbryhwbgnuwxhbhuzv.supabase.co';
+  const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVkbmJyeWh3YmdudXd4aGJodXp2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTA0NDU0MzIsImV4cCI6MjEwNjAyMTQzMn0.BkOp7jsfQ1N441zNYi6DXlQkFzet5gBJmZK48HOnd8c';
+  const TWITCH_CLIENT_ID = 'w3n4sn7ysuokibqwo1tvlynr61tk8e';
+  const TWITCH_REDIRECT_URI = 'https://lapapacorp.github.io/jeux/';
+
   const $ = (s) => document.querySelector(s);
   const grid = $('#grid'), panel = $('#panel'), panelContent = $('#panelContent');
   let games = [], reservations = {}, activeId = null, lastFocus = null;
+  let currentUser = null, credits = 0;
 
   const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const fmt = new Intl.NumberFormat('fr-FR');
@@ -282,7 +306,7 @@
       <img class="banner" src="${esc(g.header)}" alt="">
       <div class="body">
         <h2>${esc(g.name)}</h2>
-        ${by ? `<p class="status">Ce jeu est réservé par <strong>${esc(by)}</strong>.</p>` : ''}
+        ${by ? `<p class="status">Ce jeu est réservé par <strong>${esc(by)}</strong>.</p>` : reserveAreaHTML(g)}
         <div class="line">${priceHTML(g.price)}${metaHTML(g)}${ratingHTML(g, true)}</div>
         ${g.short ? `<p class="short">${esc(g.short)}</p>` : ''}
         <dl>
@@ -298,6 +322,8 @@
     document.body.classList.add('panel-open');
     panel.setAttribute('aria-hidden', 'false');
     document.querySelectorAll('.card').forEach((c) => c.classList.toggle('active', Number(c.dataset.id) === id));
+    const rb = $('#reserveBtn');
+    if (rb) rb.addEventListener('click', () => reserveGame(g.appid));
     $('#close').focus({ preventScroll: true });
   }
   function closePanel() {
@@ -317,7 +343,107 @@
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && activeId) closePanel(); });
   ['#q', '#sort', '#onlyFree'].forEach((s) => $(s).addEventListener('input', render));
 
+  // ---------- Connexion Twitch (OAuth implicite, tout se passe dans le navigateur) ----------
+  function twitchLoginUrl() {
+    const p = new URLSearchParams({
+      client_id: TWITCH_CLIENT_ID, redirect_uri: TWITCH_REDIRECT_URI,
+      response_type: 'token', scope: '', force_verify: 'true',
+    });
+    return `https://id.twitch.tv/oauth2/authorize?${p}`;
+  }
+
+  function renderAuth() {
+    const el = $('#auth');
+    if (currentUser) {
+      el.innerHTML = `<span class="user">Connecté : <b>${esc(currentUser)}</b>
+        <span class="credits-pill">${credits} jeu${credits > 1 ? 'x' : ''} à réclamer</span></span>
+        <button class="logout" id="logoutBtn" type="button">Se déconnecter</button>`;
+      $('#logoutBtn').addEventListener('click', logout);
+    } else {
+      el.innerHTML = `<a class="twitch-btn" href="${twitchLoginUrl()}">Se connecter avec Twitch</a>`;
+    }
+  }
+  function logout() {
+    currentUser = null; credits = 0;
+    localStorage.removeItem('twitchLogin');
+    renderAuth(); render();
+    if (activeId != null) openPanel(activeId);
+  }
+
+  // Après le retour de Twitch, le pseudo est dans #access_token=... (fragment d'URL)
+  async function handleTwitchRedirect() {
+    const hash = new URLSearchParams(location.hash.slice(1));
+    const token = hash.get('access_token');
+    if (!token) return;
+    history.replaceState(null, '', location.pathname + location.search);
+    try {
+      const res = await fetch('https://api.twitch.tv/helix/users', {
+        headers: { Authorization: `Bearer ${token}`, 'Client-Id': TWITCH_CLIENT_ID },
+      });
+      const data = await res.json();
+      const login = data.data?.[0]?.login;
+      if (login) { currentUser = login; localStorage.setItem('twitchLogin', login); }
+    } catch { /* connexion Twitch impossible, on laisse le viewer réessayer */ }
+  }
+
+  // ---------- Lecture Supabase (crédits, réservations) ----------
+  async function fetchCredits(login) {
+    try {
+      const res = await fetch(`${SUPABASE_URL}/rest/v1/credits?twitch_login=eq.${encodeURIComponent(login)}&select=credits`,
+        { headers: { apikey: SUPABASE_ANON_KEY, Authorization: `Bearer ${SUPABASE_ANON_KEY}` } });
+      const rows = await res.json();
+      credits = rows[0]?.credits ?? 0;
+    } catch { credits = 0; }
+  }
+  async function loadReservations() {
+    try {
+      const res = await fetch(`${SUPABASE_URL}/rest/v1/reservations?select=appid,reserved_by&reserved_by=not.is.null`,
+        { headers: { apikey: SUPABASE_ANON_KEY, Authorization: `Bearer ${SUPABASE_ANON_KEY}` } });
+      const rows = await res.json();
+      reservations = {};
+      rows.forEach((r) => { reservations[r.appid] = r.reserved_by; });
+    } catch { reservations = {}; }
+  }
+
+  // ---------- Réservation d'un jeu ----------
+  function reserveAreaHTML(g) {
+    if (!currentUser) return '<p class="status" style="background:rgba(102,192,244,.12);border-color:var(--accent);">Connecte-toi avec Twitch pour pouvoir réserver un jeu.</p>';
+    if (credits < 1) return '<p class="status" style="background:rgba(102,192,244,.12);border-color:var(--accent);">Tu n\'as pas encore de jeu à réclamer pour l\'instant.</p>';
+    return `<p><button class="btn reserve-btn" id="reserveBtn" type="button">Je réserve ce jeu (${esc(currentUser)})</button></p>`;
+  }
+
+  async function reserveGame(appid) {
+    const rb = $('#reserveBtn');
+    if (rb) { rb.disabled = true; rb.textContent = 'Réservation en cours…'; }
+    try {
+      const res = await fetch(`${SUPABASE_URL}/rest/v1/rpc/reserve_game`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', apikey: SUPABASE_ANON_KEY, Authorization: `Bearer ${SUPABASE_ANON_KEY}` },
+        body: JSON.stringify({ p_appid: appid, p_login: currentUser }),
+      });
+      const result = await res.json();
+      if (result === 'ok') {
+        reservations[appid] = currentUser;
+        credits = Math.max(0, credits - 1);
+        renderAuth(); render(); openPanel(appid);
+      } else if (result === 'already_taken') {
+        await loadReservations();
+        render(); openPanel(appid);
+        alert('Trop tard, ce jeu vient d\'être réservé par quelqu\'un d\'autre.');
+      } else if (result === 'no_credit') {
+        credits = 0; renderAuth(); openPanel(appid);
+        alert('Tu n\'as plus de jeu à réclamer pour le moment.');
+      }
+    } catch {
+      if (rb) { rb.disabled = false; rb.textContent = `Je réserve ce jeu (${currentUser})`; }
+      alert('Une erreur est survenue, réessaie dans un instant.');
+    }
+  }
+
   async function load() {
+    await handleTwitchRedirect();
+    if (!currentUser) currentUser = localStorage.getItem('twitchLogin');
+
     try {
       const data = await (await fetch('games.json', { cache: 'no-cache' })).json();
       games = data.games || [];
@@ -327,7 +453,9 @@
       grid.innerHTML = '<p class="empty">Impossible de charger games.json. Si tu ouvres le fichier directement depuis ton disque, lance plutôt un petit serveur local (ou passe par GitHub Pages).</p>';
       return;
     }
-    try { reservations = await (await fetch('reservations.json', { cache: 'no-cache' })).json(); } catch { reservations = {}; }
+    await loadReservations();
+    if (currentUser) await fetchCredits(currentUser);
+    renderAuth();
     render();
   }
   load();
