@@ -5,7 +5,64 @@
 #   https://store.steampowered.com/app/1145360/Hades/
 # Les lignes qui commencent par # sont ignorées.
 
-Hades
-Stardew Valley
-Celeste
-Hollow Knight
+Far Cry Primal
+Back 4 Blood
+Batman: Arkham Origins
+Middle-Earth: Shadow of War Definitive Edition
+MORTAL KOMBAT XL
+Batman: Arkham City - Game of the Year Edition
+The Anacrusis
+Maneater
+Mega Man 11
+Endling - Extinction is Forever
+Above Snakes
+A Plague Tale: Innocence
+Amnesia: The Bunker
+MudRunner
+Worms W.M.D
+Moving Out
+Towerfall: Ascension
+Terror of Hemasaurus
+Vampire Survivors
+Neon Abyss
+Black Future '88
+ANNO: Mutationem
+PAW Patrol the Movie: Adventure City Calls
+The Stillness of the Wind
+BPM: Bullets Per Minute
+First Class Trouble
+Perfect Heist 2
+Tower Unite
+The Ascent - Cyber Edition
+Rain World
+Samurai Jack: Battle Through Time
+Buckshot Roulette
+SIFU
+The Light Brigade
+Super Meat Boy
+Evergarden
+Keep Talking and Nobody Explodes
+Mini Motorways
+Orcs Must Die! 3
+Batman: Arkham Asylum Game of the Year Edition
+Mortal Kombat 11
+Mortal Kombat 11: Ultimate Add On
+Batman: Arkham Knight Premium Edition
+Middle-Earth: Shadow of War Definitive Edition
+Injustice 2 Legendary Edition
+Batman: Arkham Origins
+Gotham Knights
+Mafia: Trilogy
+Kitaria Fables
+Metal: Hellsinger (spônso lurkit)
+Assassin's Creed Valhalla
+Injustice 2 Legendary Edition
+Batman: Arkham Origins
+Gotham Knights
+Bread & Fred		
+Hard West 2		
+Dead Island 2
+The Dungeon Of Naheulbeuk: The Amulet Of Chaos			
+Chernobylite: Enhanced Edition
+Borderlands 3 Super Deluxe Edition
+
