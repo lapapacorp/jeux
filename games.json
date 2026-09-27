@@ -439,15 +439,7 @@
    "price": { "free": false, "final": "à vérifier sur Steam", "initial": null, "discount": 0 },
    "metacritic": 78, "reviews": null, "url": "https://store.steampowered.com/app/1061910/"},
 
-  {"appid": 748740, "name": "Mafia: Trilogy",
-   "image": "https://cdn.akamai.steamstatic.com/steam/apps/748740/library_600x900.jpg",
-   "header": "https://cdn.akamai.steamstatic.com/steam/apps/748740/header.jpg",
-   "short": "Trois époques du crime organisé américain, remasterisées en HD.",
-   "about": "<p>Ce pack regroupe les trois jeux Mafia (Definitive Edition, II et III) en versions remasterisées : de la Prohibition des années 1930 à la guerre du Vietnam, trois histoires de vengeance et d'ascension dans le crime organisé.</p>",
-   "genres": ["Action", "Aventure", "Monde ouvert"], "release": "2020", "developers": ["Hangar 13"],
-   "price": { "free": false, "final": "à vérifier sur Steam", "initial": null, "discount": 0 },
-   "metacritic": null, "reviews": null, "url": "https://store.steampowered.com/bundle/48195/Mafia_Trilogy/",
-   "note_admin": "Ce pack regroupe 3 jeux distincts sans fiche Steam unique ; l'image vient de Mafia: Definitive Edition seul, à titre représentatif. Le prix ne pourra jamais se mettre à jour automatiquement (l'API Steam ne gère pas les bundles) — pense à le vérifier toi-même de temps en temps."},
+
 
   {"appid": 627270, "name": "Injustice 2 Legendary Edition",
    "image": "https://cdn.akamai.steamstatic.com/steam/apps/627270/library_600x900.jpg",
