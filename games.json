@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27T15:15:22.675Z",
+  "updatedAt": "2026-09-27T15:46:47.256Z",
   "games": [
     {
       "appid": 1944430,
@@ -213,7 +213,7 @@
         "score": 9,
         "label": "Extrêmement positives",
         "percent": 96,
-        "total": 87819
+        "total": 87822
       },
       "url": "https://store.steampowered.com/app/35140/?l=french"
     },
