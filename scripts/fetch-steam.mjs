@@ -33,7 +33,10 @@ async function getJSON(url, tries = 3) {
 // d'erreur HTTP franche. On patiente et on retente plutôt que d'abandonner tout de suite.
 async function fetchAppDetails(appid, tries = 3) {
   for (let i = 0; i < tries; i++) {
-    const d = await getJSON(`https://store.steampowered.com/api/appdetails?appids=${appid}&l=${LANG}&cc=${CC}`);
+    // Le paramètre _ts change à chaque essai pour éviter qu'une réponse mise en
+    // cache par Steam (ou un intermédiaire réseau) ne soit servie indéfiniment.
+    const bust = `${Date.now()}${Math.floor(Math.random() * 1000)}`;
+    const d = await getJSON(`https://store.steampowered.com/api/appdetails?appids=${appid}&l=${LANG}&cc=${CC}&_ts=${bust}`);
     const node = d[appid];
     if (node && node.success) return node.data;
     if (i < tries - 1) await sleep(jitter(9000 * (i + 1)));
