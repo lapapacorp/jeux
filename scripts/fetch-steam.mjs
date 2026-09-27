@@ -4,7 +4,7 @@ import { readFile, writeFile } from 'node:fs/promises';
 
 const LANG = 'french';
 const CC = 'FR';
-const DELAY = 1800; // ms entre deux appels, pour rester sous les limites de Steam
+const DELAY = 2500; // ms entre deux appels — reste bien sous la limite Steam de ~200 requêtes/5min
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36';
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const jitter = (base) => base + Math.floor(Math.random() * 500);
@@ -14,6 +14,27 @@ const LABELS_FR = {
   5: 'Mitigées', 6: 'Plutôt positives', 7: 'Positives', 8: 'Très positives', 9: 'Extrêmement positives',
 };
 
+// Steam ne répond correctement, pour les jeux classés violence/mature, qu'après
+// avoir "rempli" son formulaire de vérification d'âge. On simule cette étape une
+// seule fois au démarrage pour récupérer un vrai cookie, plutôt que d'en inventer un.
+let AGE_COOKIE = '';
+async function getAgeCookie() {
+  const fallback = 'birthtime=283993201; lastagecheckage=1-January-1970; wants_mature_content=1';
+  try {
+    const res = await fetch('https://store.steampowered.com/agecheck/app/1/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': UA },
+      body: new URLSearchParams({ ageDay: '1', ageMonth: 'January', ageYear: '1990', snr: '1_agecheck_agecheck__default' }),
+      redirect: 'manual',
+    });
+    const cookies = typeof res.headers.getSetCookie === 'function' ? res.headers.getSetCookie() : [];
+    const joined = cookies.map((c) => c.split(';')[0]).join('; ');
+    return joined || fallback; // si Steam n'a rien renvoyé, on utilise le repli plutôt qu'une chaîne vide
+  } catch {
+    return fallback;
+  }
+}
+
 async function getJSON(url, tries = 3) {
   for (let i = 0; i < tries; i++) {
     try {
@@ -21,9 +42,7 @@ async function getJSON(url, tries = 3) {
         headers: {
           'Accept-Language': 'fr-FR,fr;q=0.9',
           'User-Agent': UA,
-          // Fait croire à Steam que la vérification d'âge a déjà été validée,
-          // sinon l'API refuse de répondre pour les jeux classés "violence/mature".
-          'Cookie': 'birthtime=0; mature_content=1; lastagecheckage=1-0-1970',
+          'Cookie': AGE_COOKIE,
         },
       });
       if (r.status === 429) { await sleep(30000 * (i + 1)); continue; }
@@ -114,6 +133,9 @@ async function fetchGame(appid) {
 
 const lines = (await readFile('jeux.txt', 'utf8'))
   .split('\n').map((l) => l.trim()).filter((l) => l && !l.startsWith('#'));
+
+AGE_COOKIE = await getAgeCookie();
+console.log('Cookie utilisé :', AGE_COOKIE);
 
 let previous = {};
 try {
