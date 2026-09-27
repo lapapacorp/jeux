@@ -161,8 +161,12 @@
 
   .empty { padding: 60px 0; text-align: center; color: var(--muted); grid-column: 1 / -1; }
   footer { margin-top: 40px; color: var(--muted); font-size: 13px; text-align: center; }
-  footer .thanks { display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 10px; }
+  footer .thanks { display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 10px; }
   footer .thanks-logo { height: 22px; width: 22px; border-radius: 50%; }
+  footer .thanks-photo {
+    height: 46px; width: 46px; object-fit: cover;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  }
 
   /* ---------- Bannière d'appel au don ---------- */
   .cta {
@@ -214,7 +218,11 @@
   <section class="grid" id="grid" aria-label="Liste des jeux"></section>
   <footer>
     <p id="foot"></p>
-    <p class="thanks"><img src="img/logo.png" alt="" class="thanks-logo"> Merci pour votre participation à la cagnotte du Gamer for Pets 🐾</p>
+    <p class="thanks">
+      <img src="img/photo-papajoue.jpg" alt="Papajoue" class="thanks-photo">
+      <img src="img/logo.png" alt="" class="thanks-logo">
+      Merci pour votre participation à la cagnotte du Gamer for Pets 🐾
+    </p>
   </footer>
 </main>
 
@@ -438,11 +446,12 @@
   async function reserveGame(appid) {
     const rb = $('#reserveBtn');
     if (rb) { rb.disabled = true; rb.textContent = 'Réservation en cours…'; }
+    const g = games.find((x) => x.appid === appid);
     try {
       const res = await fetch(`${SUPABASE_URL}/rest/v1/rpc/reserve_game`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', apikey: SUPABASE_ANON_KEY, Authorization: `Bearer ${SUPABASE_ANON_KEY}` },
-        body: JSON.stringify({ p_appid: appid, p_login: currentUser }),
+        body: JSON.stringify({ p_appid: appid, p_login: currentUser, p_name: g?.name || null }),
       });
       const result = await res.json();
       if (result === 'ok') {
