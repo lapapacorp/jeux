@@ -391,16 +391,6 @@
    "price": { "free": false, "final": "à vérifier sur Steam", "initial": null, "discount": 0 },
    "metacritic": 72, "reviews": null, "url": "https://store.steampowered.com/app/970830/"},
 
-  {"appid": 649230, "name": "The Ascent",
-   "image": "https://cdn.akamai.steamstatic.com/steam/apps/649230/library_600x900.jpg",
-   "header": "https://cdn.akamai.steamstatic.com/steam/apps/649230/header.jpg",
-   "short": "Un action-RPG cyberpunk solo ou coopératif, à l'esthétique visuelle superbe.",
-   "about": "<p>Dans une mégalopole cyberpunk verticale, il faut combattre gangs et corporations en solo ou jusqu'à 4 en coopération, porté par une direction artistique cyberpunk particulièrement soignée.</p>",
-   "genres": ["Action", "RPG", "Cyberpunk", "Coopératif"], "release": "29 juillet 2021", "developers": ["Neon Giant"],
-   "price": { "free": false, "final": "à vérifier sur Steam", "initial": null, "discount": 0 },
-   "metacritic": 75, "reviews": null, "url": "https://store.steampowered.com/app/649230/",
-   "note_admin": "La 'Cyber Edition' demandée inclut du contenu cosmétique additionnel en pack ; cette fiche pointe vers le jeu de base."},
-
   {"appid": 895400, "name": "Chernobylite",
    "image": "https://cdn.akamai.steamstatic.com/steam/apps/895400/library_600x900.jpg",
    "header": "https://cdn.akamai.steamstatic.com/steam/apps/895400/header.jpg",
