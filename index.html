@@ -202,7 +202,8 @@
   </div>
 
   <div class="toolbar" role="search">
-    <input type="search" id="q" placeholder="Rechercher un jeu ou un genre" aria-label="Rechercher un jeu ou un genre">
+    <input type="search" id="q" list="genreList" placeholder="Rechercher un jeu ou un genre" aria-label="Rechercher un jeu ou un genre">
+    <datalist id="genreList"></datalist>
     <select id="sort" aria-label="Trier les jeux">
       <option value="list">Ordre de la liste</option>
       <option value="name">Nom (A à Z)</option>
@@ -488,6 +489,11 @@
     await loadReservations();
     if (currentUser) await fetchCredits(currentUser);
     renderAuth();
+
+    // Alimente la liste de suggestions avec tous les genres réellement présents
+    const allGenres = [...new Set(games.flatMap((g) => g.genres || []))].sort((a, b) => a.localeCompare(b, 'fr'));
+    $('#genreList').innerHTML = allGenres.map((g) => `<option value="${esc(g)}">`).join('');
+
     render();
   }
   load();
