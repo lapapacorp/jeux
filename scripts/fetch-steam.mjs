@@ -21,7 +21,9 @@ let AGE_COOKIE = '';
 async function getAgeCookie() {
   const fallback = 'birthtime=283993201; lastagecheckage=1-January-1970; wants_mature_content=1';
   try {
-    const res = await fetch('https://store.steampowered.com/agecheck/app/1/', {
+    // On cible directement un vrai jeu classé "mature" (Far Cry Primal) plutôt
+    // qu'un appid arbitraire, pour déclencher le bon comportement côté Steam.
+    const res = await fetch('https://store.steampowered.com/agecheck/app/371660/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': UA },
       body: new URLSearchParams({ ageDay: '1', ageMonth: 'January', ageYear: '1990', snr: '1_agecheck_agecheck__default' }),
@@ -29,7 +31,9 @@ async function getAgeCookie() {
     });
     const cookies = typeof res.headers.getSetCookie === 'function' ? res.headers.getSetCookie() : [];
     const joined = cookies.map((c) => c.split(';')[0]).join('; ');
-    return joined || fallback; // si Steam n'a rien renvoyé, on utilise le repli plutôt qu'une chaîne vide
+    // On combine toujours avec le repli : le cookie récupéré (steamCountry, etc.)
+    // ne fait pas de mal, et les valeurs de contournement d'âge sont garanties présentes.
+    return [joined, fallback].filter(Boolean).join('; ');
   } catch {
     return fallback;
   }
