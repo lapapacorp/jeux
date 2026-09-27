@@ -1,46 +1,252 @@
 {
-  "updatedAt": null,
+  "updatedAt": "2026-09-27T15:15:22.675Z",
   "games": [
     {
-      "appid": 1145360, "name": "Hades",
-      "image": "https://cdn.akamai.steamstatic.com/steam/apps/1145360/library_600x900.jpg",
-      "header": "https://cdn.akamai.steamstatic.com/steam/apps/1145360/header.jpg",
-      "short": "Exemple : ces données seront remplacées par les vraies données Steam au premier lancement du script.",
-      "about": "<p>Données d'exemple.</p>",
-      "genres": ["Action", "Indépendant", "RPG"], "release": "17 sept. 2020", "developers": ["Supergiant Games"],
-      "price": { "free": false, "final": "24,50€", "initial": null, "discount": 0 },
-      "metacritic": 93, "reviews": { "score": 9, "label": "Extrêmement positives", "percent": 98, "total": 250000 },
-      "url": "https://store.steampowered.com/app/1145360/"
+      "appid": 1944430,
+      "name": "Amnesia: The Bunker",
+      "image": "https://cdn.akamai.steamstatic.com/steam/apps/1944430/library_600x900.jpg",
+      "header": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1944430/header.jpg?t=1786607210",
+      "short": "Amnesia: The Bunker est un jeu d'horreur à la première personne qui se déroule dans un bunker de la Première Guerre mondiale. Faites face aux dangers tapis dans l'ombre. Trouvez les outils et les armes à votre disposition, et gardez les lampes allumées pour espérer survivre.",
+      "about": "<i>Amnesia: The Bunker est un jeu d'horreur à la première personne développé par les créateurs de SOMA et d’Amnesia.</i><br><br>Abandonné dans un bunker pendant la Première Guerre mondiale, avec une seule balle restante dans votre revolver, vous allez affronter les horreurs indicibles qui rôdent dans l'obscurité. Gardez les lumières allumées à tout prix, persévérez et trouvez la sortie. Une expérience horrifique réellement intense.<br><br><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1944430/extras/ee35b55c1a2d6268ba51e62091614ea7.poster.avif?t=1786607210\" width=616 height=294 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1944430/extras/ee35b55c1a2d6268ba51e62091614ea7.webm?t=1786607210\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1944430/extras/ee35b55c1a2d6268ba51e62091614ea7.mp4?t=1786607210\" type=\"video/mp4\"></video></span><br><br><strong>Une tension progressive</strong><br>Immergez-vous dans ce jeu de survie surprenant ! Incarnez Henri Clément, un soldat français équipé d'un revolver et d'une bruyante lampe de poche à dynamo. Récupérez les rares provisions qui restent et fabriquez des objets pour vous aider. Grâce à la randomisation et à des comportements imprévisibles, aucune partie ne se ressemble.<br><br>Traqué par une menace omniprésente qui réagit à vos moindres mouvements et bruits, vous devez adapter votre style de jeu pour affronter l'enfer. Chaque décision que vous prendrez changera le déroulement du jeu. Chaque action aura des conséquences.<br><br><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1944430/extras/009aae182a646b1069d9830c3b8c6c82.poster.avif?t=1786607210\" width=616 height=294 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1944430/extras/009aae182a646b1069d9830c3b8c6c82.webm?t=1786607210\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1944430/extras/009aae182a646b1069d9830c3b8c6c82.mp4?t=1786607210\" type=\"video/mp4\"></video></span><br><br><strong>Échappez au cauchemar</strong><br>Résolvez les énigmes à votre façon dans un monde semi-ouvert. Vous devez explorer et expérimenter pour vous frayer un chemin vers la sortie. Découvrez ce qui se passe – qu'est-il arrivé aux autres soldats ? Où sont passés les officiers ? Quel cauchemar diabolique se cache dans cette antichambre de l'enfer ? Percez les mystères du bunker en découvrant les nombreuses subtilités cruelles de ce jeu de type sandbox, et améliorez vos chances de survie.<br><br><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline crossorigin=\"anonymous\" poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1944430/extras/65ba5c147bd54bbf2f4fc510d6b7b0be.poster.avif?t=1786607210\" width=616 height=294 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1944430/extras/65ba5c147bd54bbf2f4fc510d6b7b0be.webm?t=1786607210\" type=\"video/webm; codecs=vp9\"></video></span><br><br><ul class=\"bb_ul\"><li>Monstre dynamique et omniprésent qui réagit selon les actions du joueur.<br></li><li>Tension permanente : le temps joue contre vous.<br></li><li>Interactions physiques et tactiles avec le monde qui vous entoure.<br></li><li>Récupérez des ressources et fabriquez des outils pour mieux survivre.<br></li><li>Des énigmes à solutions multiples dans un monde ouvert non linéaire.</li></ul>",
+      "genres": [
+        "Action",
+        "Aventure",
+        "Indépendant"
+      ],
+      "release": "6 juin 2023",
+      "developers": [
+        "Frictional Games"
+      ],
+      "price": {
+        "free": false,
+        "final": "24,50€",
+        "initial": null,
+        "discount": 0
+      },
+      "metacritic": null,
+      "reviews": {
+        "score": 8,
+        "label": "Très positives",
+        "percent": 93,
+        "total": 12656
+      },
+      "url": "https://store.steampowered.com/app/1944430/?l=french"
     },
     {
-      "appid": 413150, "name": "Stardew Valley",
-      "image": "https://cdn.akamai.steamstatic.com/steam/apps/413150/library_600x900.jpg",
-      "header": "https://cdn.akamai.steamstatic.com/steam/apps/413150/header.jpg",
-      "short": "Exemple de description.", "about": "<p>Données d'exemple.</p>",
-      "genres": ["Simulation", "Indépendant"], "release": "26 févr. 2016", "developers": ["ConcernedApe"],
-      "price": { "free": false, "final": "13,99€", "initial": "16,99€", "discount": 18 },
-      "metacritic": 89, "reviews": { "score": 9, "label": "Extrêmement positives", "percent": 98, "total": 600000 },
-      "url": "https://store.steampowered.com/app/413150/"
+      "appid": 1434310,
+      "name": "Paw Patrol, la Pat'Patrouille - le film À la rescousse d'Adventure City ",
+      "image": "https://cdn.akamai.steamstatic.com/steam/apps/1434310/library_600x900.jpg",
+      "header": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1434310/header_french.jpg?t=1670334798",
+      "short": "Grande ville, grande aventure ! La Pat'Patrouille doit sauver Adventure City des projets égoïstes de M. Hellinger et ils ont besoin de TOI dans leur Pat'buleuse équipe ! ",
+      "about": "Une grande ville est synonyme de grande aventure ! Quand Ryder et la Pat'Patrouille apprennent que M. Humdinger a pris le contrôle d'une métropole bouillonnante de vie, ils se précipitent pour sauver Adventure City de ses machinations perfides. Les chiots ont besoin de TOI dans leur Pat'croyable équipe ! <br><br>Adventure City, nous voilà ! Incarne dans une toute nouvelle aventure tes chiots préférés : Chase, Stella, Marcus, et leur nouvelle amie, Liberty qui connait la ville comme sa poche. Utilise leurs capacités uniques dans des missions de sauvetage à haut risque ! <br><br><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1434310/extras/JUMPIN~1.GIF?t=1670334798\" /></span><br><br>Avec des gadgets et des véhicules dernier cri, explore les nouveaux lieux du film Pat' Patrouille. Entre chaque mission, amuse-toi en jouant à des mini-jeux comme Pop Pop Boogie, Course d'obstacles, et bien plus encore. Tu peux jouer à ce nouveau jeu d'aventure plateforme 3D en solo ou en mode coop local avec un ami.<br><br><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1434310/extras/0cd911c25e2b428ffe6ab677f2babedf.poster.avif?t=1670334798\" width=636 height=242 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1434310/extras/0cd911c25e2b428ffe6ab677f2babedf.webm?t=1670334798\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1434310/extras/0cd911c25e2b428ffe6ab677f2babedf.mp4?t=1670334798\" type=\"video/mp4\"></video></span><br><br>Les chiots de la Pat'Patrouille sont nés pour être des héros. Rejoins-les dans la mission la plus périlleuse qu'ils n'aient jamais connue !<br><br><strong>DIRECTION ADVENTURE CITY !</strong>  Explore les nouveaux lieux du film Pat' Patrouille<br><br><strong>DEVIENS UN HÉROS</strong>  Incarne les chiots de la Pat' Patrouille tels que Chase, Marcus, Stella et leur nouvelle amie Liberty.<br><br><strong>LA PAT' PATROUILLE EN MISSION</strong>  Sauve la ville dans d'incroyables missions de sauvetage<br><br><strong>COLLECTIONNE-LES TOUS</strong>  Lors de ton aventure, ramasse toutes les friandises pour chiot et déverrouille les badges de récompense<br><br><strong>JOUE À DES MINI-JEUX</strong>  Comme Pop Pop Boogie, en solo ou en mode coop local <br><br><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1434310/extras/937d172ecd4d790d0db0266261965b0a.poster.avif?t=1670334798\" width=636 height=242 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1434310/extras/937d172ecd4d790d0db0266261965b0a.webm?t=1670334798\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1434310/extras/937d172ecd4d790d0db0266261965b0a.mp4?t=1670334798\" type=\"video/mp4\"></video></span>",
+      "genres": [
+        "Action",
+        "Aventure"
+      ],
+      "release": "13 aout 2021",
+      "developers": [
+        "Drakhar Studio"
+      ],
+      "price": {
+        "free": false,
+        "final": "39,99€",
+        "initial": null,
+        "discount": 0
+      },
+      "metacritic": null,
+      "reviews": {
+        "score": 5,
+        "label": "Mitigées",
+        "percent": 49,
+        "total": 122
+      },
+      "url": "https://store.steampowered.com/app/1434310/?l=french"
     },
     {
-      "appid": 504230, "name": "Celeste",
-      "image": "https://cdn.akamai.steamstatic.com/steam/apps/504230/library_600x900.jpg",
-      "header": "https://cdn.akamai.steamstatic.com/steam/apps/504230/header.jpg",
-      "short": "Exemple de description.", "about": "<p>Données d'exemple.</p>",
-      "genres": ["Plateformes", "Indépendant"], "release": "25 janv. 2018", "developers": ["Maddy Makes Games"],
-      "price": { "free": false, "final": "19,99€", "initial": null, "discount": 0 },
-      "metacritic": 92, "reviews": { "score": 9, "label": "Extrêmement positives", "percent": 97, "total": 90000 },
-      "url": "https://store.steampowered.com/app/504230/"
+      "appid": 2835570,
+      "name": "Buckshot Roulette",
+      "image": "https://cdn.akamai.steamstatic.com/steam/apps/2835570/library_600x900.jpg",
+      "header": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2835570/header.jpg?t=1783085442",
+      "short": "Jouez à la roulette russe avec une arme de calibre 12. Quatre personnes entrent. Une seule sort. Jouez votre vie avec des dés. Bonne chance.",
+      "about": "<p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2835570/extras/4ae7c9c589299cc7c888daaa1e55fe2a.poster.avif?t=1783085442\" width=600 height=200 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2835570/extras/4ae7c9c589299cc7c888daaa1e55fe2a.webm?t=1783085442\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2835570/extras/4ae7c9c589299cc7c888daaa1e55fe2a.mp4?t=1783085442\" type=\"video/mp4\"></video></span></p><h2 class=\"bb_tag\" >Tirez sur vos amis </h2><p class=\"bb_paragraph\" >Prenez place à la nouvelle table multijoueur pour quatre personnes. Marchandez. Suppliez. Trahissez. Soyez victorieux au bout du compte. Ressortez-en riche. </p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2835570/extras/c56a26ad4b01b821c093ceef17162778.poster.avif?t=1783085442\" width=600 height=250 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2835570/extras/c56a26ad4b01b821c093ceef17162778.webm?t=1783085442\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2835570/extras/c56a26ad4b01b821c093ceef17162778.mp4?t=1783085442\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" ></p><h2 class=\"bb_tag\" >Calibre 12</h2><p class=\"bb_paragraph\" > Jouez à la roulette russe avec une arme de calibre 12. Simplement parce que les fusils sont plus cool.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2835570/extras/8ef4f9481329a91f17a298df1e202a29.poster.avif?t=1783085442\" width=600 height=200 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2835570/extras/8ef4f9481329a91f17a298df1e202a29.webm?t=1783085442\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2835570/extras/8ef4f9481329a91f17a298df1e202a29.mp4?t=1783085442\" type=\"video/mp4\"></video></span></p><h2 class=\"bb_tag\" >Style de jeu mortel, littéralement</h2><p class=\"bb_paragraph\" > 15 à 20 minutes de jeu intenses. Entrez dans l’arène, jouez trois manches contre le Donneur et repartez avec le prix. Ou pas.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2835570/extras/904177ed537036bc572348703bd20167.poster.avif?t=1783085442\" width=600 height=200 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2835570/extras/904177ed537036bc572348703bd20167.webm?t=1783085442\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2835570/extras/904177ed537036bc572348703bd20167.mp4?t=1783085442\" type=\"video/mp4\"></video></span></p><h2 class=\"bb_tag\" >Atmosphère immersive</h2><p class=\"bb_paragraph\" > Bienvenue dans une boîte de nuit clandestine où les rampes métalliques vibrent au son de boîtes à rythmes oubliées.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2835570/extras/adbd6784cab14bff598e532681e2b2fc.poster.avif?t=1783085442\" width=600 height=200 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2835570/extras/adbd6784cab14bff598e532681e2b2fc.webm?t=1783085442\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2835570/extras/adbd6784cab14bff598e532681e2b2fc.mp4?t=1783085442\" type=\"video/mp4\"></video></span></p><h2 class=\"bb_tag\" >Rencontrez votre adversaire</h2><p class=\"bb_paragraph\" > Affrontez le Donneur qui joue avec les mêmes probabilités que vous. Il n’y a pas de combines. Pourrez-vous le prendre à son propre jeu ?</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2835570/extras/a2446f48a145da24f4e90d5ff248e954.poster.avif?t=1783085442\" width=600 height=200 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2835570/extras/a2446f48a145da24f4e90d5ff248e954.webm?t=1783085442\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2835570/extras/a2446f48a145da24f4e90d5ff248e954.mp4?t=1783085442\" type=\"video/mp4\"></video></span></p><h2 class=\"bb_tag\" >Quitte ou double</h2><p class=\"bb_paragraph\" > Testez votre chance dans le nouveau mode Quitte ou double. Combien de temps tiendrez-vous ?</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2835570/extras/022b1bd517e5855bf8024ce5d59694b2.poster.avif?t=1783085442\" width=600 height=200 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2835570/extras/022b1bd517e5855bf8024ce5d59694b2.webm?t=1783085442\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2835570/extras/022b1bd517e5855bf8024ce5d59694b2.mp4?t=1783085442\" type=\"video/mp4\"></video></span></p><h2 class=\"bb_tag\" >Nouveaux objets</h2><p class=\"bb_paragraph\" > De nouveaux objets sont disponibles pour la sortie sur Steam. Parce qu’on vous aime.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2835570/extras/a82c68ff8171b1b26a070f20e3280fbb.poster.avif?t=1783085442\" width=600 height=200 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2835570/extras/a82c68ff8171b1b26a070f20e3280fbb.webm?t=1783085442\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2835570/extras/a82c68ff8171b1b26a070f20e3280fbb.mp4?t=1783085442\" type=\"video/mp4\"></video></span></p><h2 class=\"bb_tag\" >Sept morceaux. Pas de ratés. C'est parti ?</h2><p class=\"bb_paragraph\" > La version Steam de Buckshot Roulette inclut également la bande originale intégrale composée par Mike Klubnika.</p>",
+      "genres": [
+        "Action",
+        "Indépendant",
+        "Simulation"
+      ],
+      "release": "4 avr. 2024",
+      "developers": [
+        "Mike Klubnika"
+      ],
+      "price": {
+        "free": false,
+        "final": "2,99€",
+        "initial": null,
+        "discount": 0
+      },
+      "metacritic": null,
+      "reviews": {
+        "score": 9,
+        "label": "Extrêmement positives",
+        "percent": 95,
+        "total": 126548
+      },
+      "url": "https://store.steampowered.com/app/2835570/?l=french"
     },
     {
-      "appid": 367520, "name": "Hollow Knight",
-      "image": "https://cdn.akamai.steamstatic.com/steam/apps/367520/library_600x900.jpg",
-      "header": "https://cdn.akamai.steamstatic.com/steam/apps/367520/header.jpg",
-      "short": "Exemple de description.", "about": "<p>Données d'exemple.</p>",
-      "genres": ["Action", "Aventure", "Indépendant"], "release": "24 févr. 2017", "developers": ["Team Cherry"],
-      "price": { "free": false, "final": "14,99€", "initial": null, "discount": 0 },
-      "metacritic": 87, "reviews": { "score": 9, "label": "Extrêmement positives", "percent": 96, "total": 300000 },
-      "url": "https://store.steampowered.com/app/367520/"
+      "appid": 1579880,
+      "name": "The Light Brigade: Definitive Edition",
+      "image": "https://cdn.akamai.steamstatic.com/steam/apps/1579880/library_600x900.jpg",
+      "header": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1579880/b702306b3c147b041197d838f0ef2e75449eec86/header.jpg?t=1787332700",
+      "short": "Un jeu de tir VR roguelike primé, avec un maniement réaliste des armes et une magie de lumière immersive. Grimpez les échelons de The Light Brigade pour débloquer de nouvelles armes, améliorations, classes et capacités, et combattez pour ramener la lumière dans les ténèbres.",
+      "about": "<p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1579880/extras/0f81c2454b3b9fced88f6481ad8ef452.poster.avif?t=1787332700\" width=600 height=242 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1579880/extras/0f81c2454b3b9fced88f6481ad8ef452.webm?t=1787332700\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1579880/extras/0f81c2454b3b9fced88f6481ad8ef452.mp4?t=1787332700\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" >Rejoignez les rangs de <i>The Light Brigade</i>, ultime ligne de défense de l’humanité, et parcourez des champs de bataille générés procéduralement autant de fois qu’il le faudra pour libérer les âmes des soldats tombés au combat qui y sont prisonnières.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" > </p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1579880/extras/d5527403e6805e0fd7fd82e4ca2a8673.avif?t=1787332700\" width=600 height=155 /></span></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1579880/extras/305c2715fc7e8bda36b327353b110ff3.webp?t=1787332700\" width=600 height=19 /></span></p><p class=\"bb_paragraph\" >Un maniement réaliste des armes inspiré de l’armement historique des guerres mondiales donne lieu à des combats tendus contre des soldats, des créatures et des boss toujours plus redoutables. En VR, viser, tirer et recharger fusils à verrou, mitrailleuses et pistolets procure des sensations tactiles et une immersion exceptionnelles.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1579880/extras/c9532eb339c72df04456f3ad2d239d93.poster.avif?t=1787332700\" width=600 height=242 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1579880/extras/c9532eb339c72df04456f3ad2d239d93.webm?t=1787332700\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1579880/extras/c9532eb339c72df04456f3ad2d239d93.mp4?t=1787332700\" type=\"video/mp4\"></video></span>  </p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1579880/extras/b5ffc878257d5f8be2d38a0d80df3be5.webp?t=1787332700\" width=600 height=19 /></span></p><p class=\"bb_paragraph\" >La puissante magie de lumière s’accorde parfaitement aux armes à feu. Imprégnez les balles de votre fusil de magie lumineuse, faites pleuvoir des boules de feu sur des hordes ennemies et utilisez vos sorts pour enrichir votre arsenal de nouvelles options de combat. </p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1579880/extras/9f093e6d612f03b9904a7e43746b48c0.avif?t=1787332700\" width=600 height=134 /></span></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1579880/extras/a8ec97747226e4e2dd1a4ce649828bc7.webp?t=1787332700\" width=600 height=19 /></span></p><p class=\"bb_paragraph\" >Commencez votre expédition avec un fusil standard, puis trouvez de puissants accessoires : talismans explosifs, canons empoisonnés, lunettes tactiques, silencieux et bien plus encore. Si vous tombez sous le feu ennemi, survivez assez longtemps pour récupérer votre âme perdue, sous peine de perdre la progression de votre expédition à cause de la mort permanente.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1579880/extras/1025ec4f6b779d6d527152291ac6cbb3.poster.avif?t=1787332700\" width=600 height=242 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1579880/extras/1025ec4f6b779d6d527152291ac6cbb3.webm?t=1787332700\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1579880/extras/1025ec4f6b779d6d527152291ac6cbb3.mp4?t=1787332700\" type=\"video/mp4\"></video></span>  </p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1579880/extras/fddf5ef2f5c8b1f9a25f6c42a44d4f11.webp?t=1787332700\" width=600 height=19 /></span></p><p class=\"bb_paragraph\" >Purifiez les âmes des soldats tombés pour gravir les échelons de The Light Brigade, puis dépensez vos points de rang pour améliorer votre arme, vos capacités passives et vos sorts. Débloquez de nouvelles classes ainsi que de nouvelles armes, configurations et façons de jouer afin de varier encore davantage vos expéditions.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" >  </p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1579880/extras/5dad6cf485f7e6a3d07d0e8e582854b3.webp?t=1787332700\" width=600 height=19 /></span></p><p class=\"bb_paragraph\" >Fouillez les coffres et les ennemis pendant vos expéditions pour récupérer tout un éventail de cartes de tarot magiques, chacune dotée de pouvoirs, bonus, malus et capacités passives uniques. Trouvez des versions plus puissantes de ces cartes pour cumuler des effets dévastateurs.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1579880/extras/5c5a7f135ca54ac0ac3c811933f67b11.avif?t=1787332700\" width=600 height=155 /></span></p><p class=\"bb_paragraph\" >  </p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1579880/extras/58009c490ae5633ea1df320e1ac2e2b7.poster.avif?t=1787332700\" width=600 height=242 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1579880/extras/58009c490ae5633ea1df320e1ac2e2b7.webm?t=1787332700\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1579880/extras/58009c490ae5633ea1df320e1ac2e2b7.mp4?t=1787332700\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1579880/extras/72a5adf32410d6454932b7bcdbb7fae8.webp?t=1787332700\" width=600 height=19 /></span></p><p class=\"bb_paragraph\" >Des champs de bataille générés procéduralement à l’infini rendent chaque expédition entièrement unique et vous obligent à progresser avec prudence dans des environnements hostiles en perpétuelle évolution. Des soldats ennemis rôdent à chaque détour : votre positionnement et votre stratégie sont essentiels à votre survie. </p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1579880/extras/1ca9c907a8f180e64e63fcc0c7c954ca.poster.avif?t=1787332700\" width=600 height=242 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1579880/extras/1ca9c907a8f180e64e63fcc0c7c954ca.webm?t=1787332700\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1579880/extras/1ca9c907a8f180e64e63fcc0c7c954ca.mp4?t=1787332700\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1579880/extras/6cc77237006c36ae5367395c346fe981.webp?t=1787332700\" width=600 height=19 /></span></p><p class=\"bb_paragraph\" >Qu’est-ce qui a causé la chute du monde ? Que veulent les Forces d’Obsidienne ? Percez ces mystères et ramenez le monde du bord des ténèbres absolues avant qu’il ne soit trop tard.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1579880/extras/d053cd270b8166cd75a346a255ae6068.avif?t=1787332700\" width=600 height=939 /></span></p><p class=\"bb_paragraph\" ><strong>Avec cette ultime mise à jour « Definitive Edition », nous souhaitons remercier du fond du cœur toutes les personnes qui ont joué à The Light Brigade et nous ont soutenus.</strong><i> </i></p><p class=\"bb_paragraph\" >Depuis la sortie initiale du jeu en février 2023, nous avons consacré les trois années et demie suivantes à enrichir et développer l’expérience grâce à <strong>5 mises à jour de contenu majeures</strong> et d’innombrables mises à jour mineures. Vos retours nous ont permis d’ajouter de nouveaux mondes, armes, pouvoirs, classes, ennemis et bien plus encore !</p><p class=\"bb_paragraph\" >Ce fut un honneur de construire ce jeu aux côtés d’une communauté aussi incroyable. Merci d’avoir partagé cette aventure avec nous et d’avoir contribué à faire de The Light Brigade ce qu’il est aujourd’hui. Pour rester en contact avec notre équipe et la communauté, rejoignez notre Discord.</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1579880/extras/63dbe0c265ea13d5a1cd45096f93e9c7.poster.avif?t=1787332700\" width=600 height=458 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1579880/extras/63dbe0c265ea13d5a1cd45096f93e9c7.webm?t=1787332700\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1579880/extras/63dbe0c265ea13d5a1cd45096f93e9c7.mp4?t=1787332700\" type=\"video/mp4\"></video></span></p>",
+      "genres": [
+        "Action",
+        "RPG",
+        "Stratégie"
+      ],
+      "release": "22 févr. 2023",
+      "developers": [
+        "Funktronic Labs"
+      ],
+      "price": {
+        "free": false,
+        "final": "24,50€",
+        "initial": null,
+        "discount": 0
+      },
+      "metacritic": null,
+      "reviews": {
+        "score": 8,
+        "label": "Très positives",
+        "percent": 88,
+        "total": 1279
+      },
+      "url": "https://store.steampowered.com/app/1579880/?l=french"
+    },
+    {
+      "appid": 576500,
+      "name": "Evergarden",
+      "image": "https://cdn.akamai.steamstatic.com/steam/apps/576500/library_600x900.jpg",
+      "header": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/576500/header.jpg?t=1727884595",
+      "short": "Évadez-vous dans un monde de casse-tête mystérieux qui éveillera votre esprit, et calmera votre âme.",
+      "about": "Vous ne verrez plus le temps passer lorsque vous jouez à ce jeu de réflexion immensément satisfaisant dont l'action se déroule dans une mystérieuse forêt. Transformez votre jardin en combinant les plantes pour créer de nouvelles variétés étranges, et découvrez les secrets cachés du jeu alors que vous vous laissez emporter par son rythme calme. Enfoncez-vous dans la forêt et redonnez-lui vie avec l'aide de Fen, la créature qui sera votre guide. Evergarden vous semblera peut-être familier, initialement, mais vous découvrirez rapidement que vous n'avez joué à rien de tel.",
+      "genres": [
+        "Aventure",
+        "Occasionnel",
+        "Indépendant",
+        "Stratégie"
+      ],
+      "release": "16 aout 2018",
+      "developers": [
+        "Flippfly LLC"
+      ],
+      "price": {
+        "free": false,
+        "final": "9,75€",
+        "initial": null,
+        "discount": 0
+      },
+      "metacritic": null,
+      "reviews": {
+        "score": 8,
+        "label": "Très positives",
+        "percent": 86,
+        "total": 770
+      },
+      "url": "https://store.steampowered.com/app/576500/?l=french"
+    },
+    {
+      "appid": 1127500,
+      "name": "Mini Motorways",
+      "image": "https://cdn.akamai.steamstatic.com/steam/apps/1127500/library_600x900.jpg",
+      "header": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1127500/4cd90189865944d34687a9e0fe74adb17ba4800c/header_alt_assets_4.jpg?t=1789703699",
+      "short": "Mini Motorways est un jeu de stratégie de conception d'une carte routière pour une ville en expansion. Construisez un réseau routier, une route après l'autre, pour créer une métropole en pleine agitation. Redessinez vos routes et placez vos autoroutes pour permettre à tout le monde de se déplacer.",
+      "about": "<p class=\"bb_paragraph\" >Vous avez déjà rêvé de redéfinir le paysage urbain de votre ville pour en finir avec les embouteillages ? Mini Motorways est le jeu qu’il vous faut.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" >Conçu par le studio qui a créé Mini Metro, Mini Motorways est un jeu de construction des routes qui parcourent une ville en expansion. Construisez un réseau routier afin de concevoir une métropole effervescente. Faites en sorte que le trafic reste fluide, et gérez les améliorations avec précaution afin de répondre aux demandes de votre réseau. Combien de temps pourrez-vous garder les villes du monde en mouvement ?</p><p class=\"bb_paragraph\" ></p><h2 class=\"bb_tag\" >Caractéristiques</h2><ul class=\"bb_ul\"><li><p class=\"bb_paragraph\" >Dessinez des routes dans des villes dynamiques qui grandissent et changent continuellement. Chaque partie est unique !</p></li><li><p class=\"bb_paragraph\" >Explorez de superbes cartes inspirées de villes du monde entier.</p></li><li><p class=\"bb_paragraph\" >Choisissez parmi une variété de mises à niveau pour répondre aux exigences de votre réseau routier en constante expansion : autoroutes, ronds-points, et plus encore !</p></li><li><p class=\"bb_paragraph\" >Construisez sans limite avec le mode Créatif ! Créez la ville de vos rêves exactement comme vous l'avez imaginée grâce à un nombre illimité d'améliorations et d'outils de personnalisation.</p></li><li><p class=\"bb_paragraph\" >Le mode Sans fin vous offre une expérience de jeu relaxante et vous permet de continuer à développer votre ville après la fin du jeu.</p></li><li><p class=\"bb_paragraph\" >Tentez notre mode Expert, qui propose des fonctionnalités comme les routes définitives et les améliorations limitées pour défi ultime.</p></li><li><p class=\"bb_paragraph\" >Sélectionnez différentes palettes de couleurs sur chaque carte, y compris les modes daltonien et nuit.</p></li><li><p class=\"bb_paragraph\" >Détendez-vous en écoutant une bande sonore réactive de Disasterpeace qui évolue en même temps que votre ville.</p></li><li><p class=\"bb_paragraph\" >Débloquez de nouvelles cartes et des accomplissements au fur et à mesure de votre maîtrise du jeu.</p></li><li><p class=\"bb_paragraph\" >Exportez des GIFs de votre ville pour les partager avec vos amis.</p></li><li><p class=\"bb_paragraph\" >Affrontez d'autres joueurs dans les défis quotidiens et hebdomadaires.</p></li></ul>",
+      "genres": [
+        "Occasionnel",
+        "Simulation",
+        "Stratégie"
+      ],
+      "release": "20 juil. 2021",
+      "developers": [
+        "Dinosaur Polo Club"
+      ],
+      "price": {
+        "free": false,
+        "final": "8,19€",
+        "initial": null,
+        "discount": 0
+      },
+      "metacritic": 87,
+      "reviews": {
+        "score": 9,
+        "label": "Extrêmement positives",
+        "percent": 96,
+        "total": 24476
+      },
+      "url": "https://store.steampowered.com/app/1127500/?l=french"
+    },
+    {
+      "appid": 35140,
+      "name": "Batman: Arkham Asylum Game of the Year Edition",
+      "image": "https://cdn.akamai.steamstatic.com/steam/apps/35140/library_600x900.jpg",
+      "header": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/35140/header.jpg?t=1745966724",
+      "short": "Soyez Batman et affrontez les super-vilains de Gotham City. Parcourez l'asile d'Arkham et son île terrifiante.",
+      "about": "Le jeu Batman: Arkham Asylum, récompensé par les critiques, revient dans une édition remastérisée &quot;Game of the Year&quot; qui comporte 4 nouvelles cartes pour le mode Défi. Dans ce lot de 4 cartes figurent l'Allée du Crime, Cauchemar, Complètement fou, et Chasseur Nocturne (les deux dernières proviennent du pack de cartes Nuit démentielle).<br><ul class=\"bb_ul\"><li>Tirez parti du système de combat FreeFlow™ pour enchaîner les combos sans aucune transition et éliminer brutalement les larges groupes d'hommes de main du Joker <br></li><li>Vous êtes Batman, le plus grand des justiciers. Menez l'enquête en résolvant des énigmes retorses, en vous aidant d'outils ultra-sophistiqués de la police scientifique : scan aux rayons x, scan d'empreintes digitales, mais aussi le spray &quot;Amido Black&quot; et le pisteur de phéromone.<br></li><li>Affrontez les plus grands malfrats de Gotham City : le Joker, Harley Quinn, Victor Zsasz et Killer Croc.<br></li><li>Devenez un véritable Prédateur Invisible. Grâce à un système de points d'observation unique et aux attaques de panique qui glacent d'effroi l'adversaire, Batman peut se déplacer furtivement et traquer ses ennemis.<br></li><li>Plusieurs techniques d'attaque : fondez sur l'ennemi depuis les hauteurs ou brisez les murs. <br></li><li>Pour la première fois dans un jeu, explorez de fond en comble l'asile d'Arkham et déplacez-vous en toute liberté sur l'île maudite.<br></li><li>En vrai justicier, utilisez vos Batarangs, votre gel explosif, la Batgriffe, le sonar, ainsi que le grappin<br></li><li>Découvrez bien d'autres secrets en terminant des défis cachés dans l'univers du jeu et personnalisez votre équipement en gagnant des points d'expérience.<br></li><li>Profitez de vos pouvoirs de super-héros avec une liberté d'action totale : utilisez le grappin de Batman pour aller où bon vous semble, pour prendre de la hauteur ou pour glisser le long du câble, dans n'importe quelle direction.</li></ul>",
+      "genres": [
+        "Action",
+        "Aventure"
+      ],
+      "release": "26 mars 2010",
+      "developers": [
+        "Rocksteady Studios"
+      ],
+      "price": {
+        "free": false,
+        "final": "19,99€",
+        "initial": null,
+        "discount": 0
+      },
+      "metacritic": 91,
+      "reviews": {
+        "score": 9,
+        "label": "Extrêmement positives",
+        "percent": 96,
+        "total": 87819
+      },
+      "url": "https://store.steampowered.com/app/35140/?l=french"
+    },
+    {
+      "appid": 1471870,
+      "name": "Mortal Kombat 11 Ultimate Add-On Bundle",
+      "image": "https://cdn.akamai.steamstatic.com/steam/apps/1471870/library_600x900.jpg",
+      "header": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1471870/header.jpg?t=1606327751",
+      "short": "Comprend l'extension Aftermath, les Kombat Packs 1 et 2. Aftermath vous emmène dans une toute nouvelle histoire en cinématiques, dans laquelle se mêlent vérité et mensonge. Forgez une nouvelle histoire. • Une toute nouvelle histoire en cinématiques • 12 nouveaux kombattants dont les nouveaux Mileena, Rain et Rambo • 9 nouveaux Packs de...",
+      "about": "Requiert MK11. Les nouveaux joueurs peuvent acheter Mortal Kombat 11 Ultimate.<br />\r\n<br />\r\nComprend le Kombat Pack, Mortal Kombat 11: Aftermath et le Kombat Pack 2.<br />\r\n<br />\r\nKombat Pack 2<br />\r\n<br />\r\n• 3 nouveaux personnages jouables - Mileena, Rain et Rambo<br />\r\n<br />\r\nExtension Aftermath<br />\r\n<br />\r\nAftermath vous emmène dans une toute nouvelle histoire en cinématiques, dans laquelle se mêlent vérité et mensonge. Le dieu du Feu Liu Kang, nouveau Gardien du Temps et protecteur du Royaume Terre, cherche à garantir le futur qu'il perçoit, et pour y parvenir il doit demander l'aide d'alliés inattendus et de vieux ennemis. Les joueurs devront alors décider qui croire et qui combattre, avec le destin de la Terre en jeu. Forgez une nouvelle histoire.<br />\r\n<br />\r\n• Une toute nouvelle histoire en cinématiques<br />\r\n• 3 nouveaux personnages jouables - Sheeva, Fujin et RoboCop<br />\r\n• 3 nouveaux Packs de Skins<br />\r\n<br />\r\nKombat Pack 1<br />\r\n<br />\r\n• 6 nouveaux personnages jouables - Shang Tsung, Nightwolf, Terminator T-800, Sindel, Le Joker et Spawn<br />\r\n• 6 Packs de Skins et 7 Skins exclusifs",
+      "genres": [
+        "Action"
+      ],
+      "release": "17 nov. 2020",
+      "developers": [
+        "NetherRealm Studios",
+        "QLOC",
+        "Shiver"
+      ],
+      "price": {
+        "free": false,
+        "final": "49,99€",
+        "initial": null,
+        "discount": 0
+      },
+      "metacritic": null,
+      "reviews": {
+        "score": 8,
+        "label": "Très positives",
+        "percent": 93,
+        "total": 299
+      },
+      "url": "https://store.steampowered.com/app/1471870/?l=french"
     }
   ]
 }
