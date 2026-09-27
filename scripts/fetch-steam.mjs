@@ -4,8 +4,10 @@ import { readFile, writeFile } from 'node:fs/promises';
 
 const LANG = 'french';
 const CC = 'FR';
-const DELAY = 1200; // ms entre deux appels, pour rester sous les limites de Steam
+const DELAY = 1800; // ms entre deux appels, pour rester sous les limites de Steam
+const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36';
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+const jitter = (base) => base + Math.floor(Math.random() * 500);
 
 const LABELS_FR = {
   1: 'Extrêmement négatives', 2: 'Très négatives', 3: 'Négatives', 4: 'Plutôt négatives',
@@ -15,7 +17,7 @@ const LABELS_FR = {
 async function getJSON(url, tries = 3) {
   for (let i = 0; i < tries; i++) {
     try {
-      const r = await fetch(url, { headers: { 'Accept-Language': 'fr-FR,fr;q=0.9' } });
+      const r = await fetch(url, { headers: { 'Accept-Language': 'fr-FR,fr;q=0.9', 'User-Agent': UA } });
       if (r.status === 429) { await sleep(30000 * (i + 1)); continue; }
       if (!r.ok) throw new Error('HTTP ' + r.status);
       return await r.json();
@@ -24,6 +26,19 @@ async function getJSON(url, tries = 3) {
       await sleep(3000);
     }
   }
+}
+
+// Steam renvoie souvent "success: false" de façon temporaire quand elle limite le
+// trafic (fréquent depuis les IPs partagées de GitHub Actions), sans jamais renvoyer
+// d'erreur HTTP franche. On patiente et on retente plutôt que d'abandonner tout de suite.
+async function fetchAppDetails(appid, tries = 3) {
+  for (let i = 0; i < tries; i++) {
+    const d = await getJSON(`https://store.steampowered.com/api/appdetails?appids=${appid}&l=${LANG}&cc=${CC}`);
+    const node = d[appid];
+    if (node && node.success) return node.data;
+    if (i < tries - 1) await sleep(jitter(9000 * (i + 1)));
+  }
+  throw new Error('appdetails vide pour ' + appid);
 }
 
 function parseLine(line) {
@@ -45,11 +60,8 @@ async function resolveAppId({ appid, query }) {
 }
 
 async function fetchGame(appid) {
-  const d = await getJSON(`https://store.steampowered.com/api/appdetails?appids=${appid}&l=${LANG}&cc=${CC}`);
-  const node = d[appid];
-  if (!node || !node.success) throw new Error('appdetails vide pour ' + appid);
-  const g = node.data;
-  await sleep(DELAY);
+  const g = await fetchAppDetails(appid);
+  await sleep(jitter(DELAY));
 
   let reviews = null;
   try {
@@ -105,7 +117,7 @@ const seen = new Set();
 for (const line of lines) {
   try {
     const appid = await resolveAppId(parseLine(line));
-    await sleep(DELAY);
+    await sleep(jitter(DELAY));
     if (!appid) { failures.push(`Introuvable : ${line}`); continue; }
     if (seen.has(appid)) continue;
     seen.add(appid);
@@ -118,7 +130,7 @@ for (const line of lines) {
     const m = line.match(/\d+/);
     if (m && previous[m[0]]) games.push(previous[m[0]]);
   }
-  await sleep(DELAY);
+  await sleep(jitter(DELAY));
 }
 
 await writeFile('games.json', JSON.stringify({ updatedAt: new Date().toISOString(), games }, null, 2));
