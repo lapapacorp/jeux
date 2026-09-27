@@ -152,8 +152,9 @@ const failures = [];
 const seen = new Set();
 
 for (const line of lines) {
+  let appid = null;
   try {
-    const appid = await resolveAppId(parseLine(line));
+    appid = await resolveAppId(parseLine(line));
     await sleep(jitter(DELAY));
     if (!appid) { failures.push(`Introuvable : ${line}`); continue; }
     if (seen.has(appid)) continue;
@@ -163,9 +164,12 @@ for (const line of lines) {
   } catch (e) {
     console.warn('ERREUR', line, '-', e.message);
     failures.push(`${line} (${e.message})`);
-    // on garde l'ancienne version si on l'avait
-    const m = line.match(/\d+/);
-    if (m && previous[m[0]]) games.push(previous[m[0]]);
+    // On garde l'ancienne fiche (même remplie à la main) si on la retrouve par
+    // son appid réel, pas seulement si un numéro traînait dans le texte de jeux.txt.
+    if (appid && previous[appid] && !seen.has(appid)) {
+      seen.add(appid);
+      games.push(previous[appid]);
+    }
   }
   await sleep(jitter(DELAY));
 }
