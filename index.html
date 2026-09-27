@@ -76,7 +76,8 @@
   .auth .twitch-btn:hover { background: #7c2df0; }
   .auth .user { display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--text); }
   .auth .user b { color: #fff; }
-  .auth .credits-pill { padding: 3px 10px; border-radius: 12px; background: rgba(102,192,244,.18); color: var(--accent); font-weight: 700; font-size: 12.5px; white-space: nowrap; }
+  .auth .credits-pill { display: inline-flex; align-items: center; gap: 5px; padding: 3px 10px; border-radius: 12px; background: rgba(102,192,244,.18); color: var(--accent); font-weight: 700; font-size: 12.5px; white-space: nowrap; }
+  .auth .credits-pill .paw-icon { height: 14px; width: 14px; }
   .auth .logout { background: none; border: 0; color: var(--muted); text-decoration: underline; cursor: pointer; font-size: 13px; padding: 0; }
   .auth .logout:hover { color: var(--text); }
   .reserve-btn { border: 0; cursor: pointer; font-size: 15px; padding: 12px 20px; }
@@ -160,22 +161,41 @@
 
   .empty { padding: 60px 0; text-align: center; color: var(--muted); grid-column: 1 / -1; }
   footer { margin-top: 40px; color: var(--muted); font-size: 13px; text-align: center; }
+  footer .thanks { display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 10px; }
+  footer .thanks-logo { height: 22px; width: 22px; border-radius: 50%; }
+
+  /* ---------- Bannière d'appel au don ---------- */
+  .cta {
+    display: flex; align-items: center; gap: 12px; margin-bottom: 22px; padding: 14px 18px;
+    background: linear-gradient(90deg, rgba(102,192,244,.14), rgba(190,238,17,.08));
+    border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 4px;
+  }
+  .cta-paw { height: 34px; width: 34px; flex-shrink: 0; }
+  .cta p { margin: 0; font-size: 15.5px; color: var(--text); }
+  .cta a { color: var(--deal-fg); font-weight: 700; text-decoration: underline; }
+  .cta a:hover { color: #fff; }
 </style>
 </head>
 <body>
 <main>
   <header class="top">
-    <!-- Dépose ton logo dans assets/logo.png et tes badges dans assets/badge1.png, assets/badge2.png -->
-    <img class="logo" src="assets/logo.png" alt="Gamer for Pets" onerror="this.hidden=true">
+    <img class="logo" src="img/logo_complet.png" alt="Papajoue" onerror="this.hidden=true">
     <div class="titles">
       <h1>Les jeux offerts par Papajoue</h1>
       <p>Chaque don à la cagnotte du Gamer for Pets débloque un jeu Steam. Survole une jaquette pour un aperçu, clique dessus pour lire la description.</p>
     </div>
     <div class="badges">
-      <img src="assets/badge1.png" alt="" onerror="this.remove()">
-      <img src="assets/badge2.png" alt="" onerror="this.remove()">
+      <!-- Dépose ici le futur logo/badge officiel Gamer for Pets, ex : img/badge-gfp.png -->
+      <img src="img/badge1.png" alt="" onerror="this.remove()">
+      <img src="img/badge2.png" alt="" onerror="this.remove()">
     </div>
   </header>
+
+  <div class="cta">
+    <img src="img/paw.png" alt="" class="cta-paw">
+    <p>Gagne tes patounes en participant à la cagnotte Papajoue :
+      <a href="LIEN_STREAMLABS_A_REMPLACER" target="_blank" rel="noopener">faire un don</a></p>
+  </div>
 
   <div class="toolbar" role="search">
     <input type="search" id="q" placeholder="Rechercher un jeu ou un genre" aria-label="Rechercher un jeu ou un genre">
@@ -192,7 +212,10 @@
   </div>
 
   <section class="grid" id="grid" aria-label="Liste des jeux"></section>
-  <footer id="foot"></footer>
+  <footer>
+    <p id="foot"></p>
+    <p class="thanks"><img src="img/logo.png" alt="" class="thanks-logo"> Merci pour votre participation à la cagnotte du Gamer for Pets 🐾</p>
+  </footer>
 </main>
 
 <aside class="panel" id="panel" aria-hidden="true" aria-label="Détails du jeu">
@@ -356,7 +379,7 @@
     const el = $('#auth');
     if (currentUser) {
       el.innerHTML = `<span class="user">Connecté : <b>${esc(currentUser)}</b>
-        <span class="credits-pill">${credits} jeu${credits > 1 ? 'x' : ''} à réclamer</span></span>
+        <span class="credits-pill"><img src="img/paw.png" alt="" class="paw-icon"> ${credits} patoune${credits > 1 ? 's' : ''} restante${credits > 1 ? 's' : ''}</span></span>
         <button class="logout" id="logoutBtn" type="button">Se déconnecter</button>`;
       $('#logoutBtn').addEventListener('click', logout);
     } else {
@@ -408,7 +431,7 @@
   // ---------- Réservation d'un jeu ----------
   function reserveAreaHTML(g) {
     if (!currentUser) return '<p class="status" style="background:rgba(102,192,244,.12);border-color:var(--accent);">Connecte-toi avec Twitch pour pouvoir réserver un jeu.</p>';
-    if (credits < 1) return '<p class="status" style="background:rgba(102,192,244,.12);border-color:var(--accent);">Tu n\'as pas encore de jeu à réclamer pour l\'instant.</p>';
+    if (credits < 1) return '<p class="status" style="background:rgba(102,192,244,.12);border-color:var(--accent);">Tu n\'as pas encore de patoune à dépenser pour l\'instant.</p>';
     return `<p><button class="btn reserve-btn" id="reserveBtn" type="button">Je réserve ce jeu (${esc(currentUser)})</button></p>`;
   }
 
