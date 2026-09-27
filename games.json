@@ -431,7 +431,7 @@
    "genres": ["Combat", "Action"], "release": "27 mars 2018", "developers": ["NetherRealm Studios", "QLOC"],
    "price": { "free": false, "final": "à vérifier sur Steam", "initial": null, "discount": 0 },
    "metacritic": 85, "reviews": { "score": 8, "label": "Très positives", "percent": 86, "total": null }, "url": "https://store.steampowered.com/sub/249064/",
-   "note_admin": "Les infos (image, description, prix) viennent du jeu de base Injustice 2 (627270) — l'API Steam ne gère pas les packs — mais le lien 'Voir sur Steam' pointe bien vers le pack Legendary Edition à 59,99€ que tu m'as montré."}
+   "note_admin": "Les infos (image, description, prix) viennent du jeu de base Injustice 2 (627270) — l'API Steam ne gère pas les packs — mais le lien 'Voir sur Steam' pointe bien vers le pack Legendary Edition à 59,99€ que tu m'as montré."},
 
 
     {
