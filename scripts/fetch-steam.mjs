@@ -17,7 +17,15 @@ const LABELS_FR = {
 async function getJSON(url, tries = 3) {
   for (let i = 0; i < tries; i++) {
     try {
-      const r = await fetch(url, { headers: { 'Accept-Language': 'fr-FR,fr;q=0.9', 'User-Agent': UA } });
+      const r = await fetch(url, {
+        headers: {
+          'Accept-Language': 'fr-FR,fr;q=0.9',
+          'User-Agent': UA,
+          // Fait croire à Steam que la vérification d'âge a déjà été validée,
+          // sinon l'API refuse de répondre pour les jeux classés "violence/mature".
+          'Cookie': 'birthtime=0; mature_content=1; lastagecheckage=1-0-1970',
+        },
+      });
       if (r.status === 429) { await sleep(30000 * (i + 1)); continue; }
       if (!r.ok) throw new Error('HTTP ' + r.status);
       return await r.json();
