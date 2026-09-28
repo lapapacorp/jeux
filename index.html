@@ -92,13 +92,13 @@
   .reserve-btn:disabled { opacity: .6; cursor: default; }
 
   /* ---------- Grille ---------- */
-  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 22px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 22px; perspective: 1200px; }
   .card {
     position: relative; display: block; width: 100%; padding: 0; border: 0; cursor: pointer;
     aspect-ratio: 2 / 3; border-radius: 4px; overflow: hidden; background: var(--panel);
     box-shadow: 0 4px 18px rgba(0,0,0,.45);
-    transition: transform .18s ease, box-shadow .18s ease;
-    text-align: left;
+    transition: transform 180ms cubic-bezier(0.23,1,0.32,1), box-shadow .18s ease;
+    text-align: left; transform-style: preserve-3d; will-change: transform;
   }
   .card img.cover { width: 100%; height: 100%; object-fit: cover; display: block; transition: filter .25s ease; }
   .card:hover, .card:focus-visible, .card.active { transform: translateY(-4px); box-shadow: 0 10px 28px rgba(0,0,0,.6), 0 0 0 2px var(--accent); }
@@ -383,6 +383,26 @@
     const id = Number(card.dataset.id);
     activeId === id ? closePanel() : openPanel(id);
   });
+
+  // ---------- Tilt 3D au survol (souris fine uniquement, respecte prefers-reduced-motion) ----------
+  const canTilt = window.matchMedia('(hover: hover) and (pointer: fine)').matches
+    && !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (canTilt) {
+    let tiltCard = null;
+    const resetTilt = () => { if (tiltCard) { tiltCard.style.transform = ''; tiltCard = null; } };
+    grid.addEventListener('mousemove', (e) => {
+      const card = e.target.closest('.card');
+      if (!card) { resetTilt(); return; }
+      if (card !== tiltCard) { resetTilt(); tiltCard = card; }
+      const r = card.getBoundingClientRect();
+      const px = (e.clientX - r.left) / r.width;   // 0 (gauche) → 1 (droite)
+      const py = (e.clientY - r.top) / r.height;   // 0 (haut) → 1 (bas)
+      const rotY = (px - 0.5) * 16;  // gauche s'enfonce en négatif, droite en positif
+      const rotX = (0.5 - py) * 12;  // haut/bas pareil
+      card.style.transform = `translateY(-4px) scale(1.035) rotateX(${rotX}deg) rotateY(${rotY}deg)`;
+    });
+    grid.addEventListener('mouseleave', resetTilt);
+  }
   $('#close').addEventListener('click', closePanel);
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && activeId) closePanel(); });
   ['#q', '#sort', '#onlyFree'].forEach((s) => $(s).addEventListener('input', render));
