@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-04T11:10:40.224Z",
+  "updatedAt": "2026-10-05T05:32:12.012Z",
   "games": [
     {
       "appid": 371660,
@@ -27,7 +27,7 @@
         "score": 8,
         "label": "Très positives",
         "percent": 86,
-        "total": 41510
+        "total": 41528
       },
       "url": "https://store.steampowered.com/app/371660/?l=french"
     },
@@ -56,7 +56,7 @@
         "score": 5,
         "label": "Mitigées",
         "percent": 69,
-        "total": 73406
+        "total": 73415
       },
       "url": "https://store.steampowered.com/app/924970/?l=french"
     },
@@ -87,7 +87,7 @@
         "score": 8,
         "label": "Très positives",
         "percent": 90,
-        "total": 65732
+        "total": 65745
       },
       "url": "https://store.steampowered.com/app/209000/?l=french"
     },
@@ -108,9 +108,9 @@
       ],
       "price": {
         "free": false,
-        "final": "9,75€",
-        "initial": null,
-        "discount": 0
+        "final": "0,97€",
+        "initial": "9,75€",
+        "discount": 90
       },
       "metacritic": null,
       "reviews": {
@@ -149,7 +149,7 @@
         "score": 8,
         "label": "Très positives",
         "percent": 87,
-        "total": 27025
+        "total": 27042
       },
       "url": "https://store.steampowered.com/app/629820/?l=french"
     },
@@ -178,7 +178,7 @@
         "score": 8,
         "label": "Très positives",
         "percent": 89,
-        "total": 5512
+        "total": 5514
       },
       "url": "https://store.steampowered.com/app/742300/?l=french"
     },
@@ -239,7 +239,7 @@
         "score": 8,
         "label": "Très positives",
         "percent": 93,
-        "total": 73061
+        "total": 73097
       },
       "url": "https://store.steampowered.com/app/752590/?l=french"
     },
@@ -270,7 +270,7 @@
         "score": 8,
         "label": "Très positives",
         "percent": 93,
-        "total": 12700
+        "total": 12706
       },
       "url": "https://store.steampowered.com/app/1944430/?l=french"
     },
@@ -299,7 +299,7 @@
         "score": 8,
         "label": "Très positives",
         "percent": 92,
-        "total": 44334
+        "total": 44344
       },
       "url": "https://store.steampowered.com/app/675010/?l=french"
     },
@@ -329,7 +329,7 @@
         "score": 8,
         "label": "Très positives",
         "percent": 85,
-        "total": 14986
+        "total": 14992
       },
       "url": "https://store.steampowered.com/app/327030/?l=french"
     },
@@ -362,7 +362,7 @@
         "score": 8,
         "label": "Très positives",
         "percent": 80,
-        "total": 2363
+        "total": 2365
       },
       "url": "https://store.steampowered.com/app/996770/?l=french"
     },
@@ -393,7 +393,7 @@
         "score": 9,
         "label": "Extrêmement positives",
         "percent": 95,
-        "total": 3629
+        "total": 3630
       },
       "url": "https://store.steampowered.com/app/251470/?l=french"
     },
@@ -455,7 +455,7 @@
         "score": 9,
         "label": "Extrêmement positives",
         "percent": 98,
-        "total": 266180
+        "total": 266211
       },
       "url": "https://store.steampowered.com/app/1794680/?l=french"
     },
@@ -487,7 +487,7 @@
         "score": 8,
         "label": "Très positives",
         "percent": 86,
-        "total": 23631
+        "total": 23630
       },
       "url": "https://store.steampowered.com/app/788100/?l=french"
     },
@@ -702,7 +702,7 @@
         "score": 8,
         "label": "Très positives",
         "percent": 93,
-        "total": 4778
+        "total": 4780
       },
       "url": "https://store.steampowered.com/app/1521580/?l=french"
     },
@@ -736,7 +736,7 @@
         "score": 8,
         "label": "Très positives",
         "percent": 90,
-        "total": 21813
+        "total": 21816
       },
       "url": "https://store.steampowered.com/app/394690/?l=french"
     },
@@ -767,7 +767,7 @@
         "score": 8,
         "label": "Très positives",
         "percent": 94,
-        "total": 57769
+        "total": 57788
       },
       "url": "https://store.steampowered.com/app/312520/?l=french"
     },
@@ -798,7 +798,7 @@
         "score": 9,
         "label": "Extrêmement positives",
         "percent": 95,
-        "total": 126881
+        "total": 126930
       },
       "url": "https://store.steampowered.com/app/2835570/?l=french"
     },
@@ -828,7 +828,7 @@
         "score": 8,
         "label": "Très positives",
         "percent": 92,
-        "total": 28997
+        "total": 29011
       },
       "url": "https://store.steampowered.com/app/2138710/?l=french"
     },
@@ -888,7 +888,7 @@
         "score": 8,
         "label": "Très positives",
         "percent": 94,
-        "total": 39232
+        "total": 39239
       },
       "url": "https://store.steampowered.com/app/40800/?l=french"
     },
@@ -980,7 +980,7 @@
         "score": 9,
         "label": "Extrêmement positives",
         "percent": 96,
-        "total": 24503
+        "total": 24505
       },
       "url": "https://store.steampowered.com/app/1127500/?l=french"
     },
@@ -1012,7 +1012,7 @@
         "score": 8,
         "label": "Très positives",
         "percent": 86,
-        "total": 14938
+        "total": 14939
       },
       "url": "https://store.steampowered.com/app/1522820/?l=french"
     },
@@ -1042,7 +1042,7 @@
         "score": 9,
         "label": "Extrêmement positives",
         "percent": 96,
-        "total": 87977
+        "total": 88013
       },
       "url": "https://store.steampowered.com/app/35140/?l=french"
     },
@@ -1073,7 +1073,7 @@
         "score": 8,
         "label": "Très positives",
         "percent": 88,
-        "total": 116511
+        "total": 116524
       },
       "url": "https://store.steampowered.com/app/976310/?l=french"
     },
@@ -1136,7 +1136,7 @@
         "score": 5,
         "label": "Mitigées",
         "percent": 67,
-        "total": 25328
+        "total": 25333
       },
       "url": "https://store.steampowered.com/app/1496790/?l=french"
     },
@@ -1199,7 +1199,7 @@
         "score": 5,
         "label": "Mitigées",
         "percent": 69,
-        "total": 45463
+        "total": 45487
       },
       "url": "https://store.steampowered.com/app/2208920/?l=french"
     },
@@ -1231,7 +1231,7 @@
         "score": 6,
         "label": "Plutôt positives",
         "percent": 77,
-        "total": 5255
+        "total": 5256
       },
       "url": "https://store.steampowered.com/app/1607680/?l=french"
     },
@@ -1262,7 +1262,7 @@
         "score": 8,
         "label": "Très positives",
         "percent": 82,
-        "total": 3234
+        "total": 3236
       },
       "url": "https://store.steampowered.com/app/1282410/?l=french"
     },
@@ -1292,7 +1292,7 @@
         "score": 6,
         "label": "Plutôt positives",
         "percent": 77,
-        "total": 29950
+        "total": 29972
       },
       "url": "https://store.steampowered.com/app/934700/?l=french"
     },
