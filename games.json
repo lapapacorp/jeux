@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-05T05:32:12.012Z",
+  "updatedAt": "2026-10-06T05:24:56.348Z",
   "games": [
     {
       "appid": 371660,
@@ -27,7 +27,7 @@
         "score": 8,
         "label": "Très positives",
         "percent": 86,
-        "total": 41528
+        "total": 41545
       },
       "url": "https://store.steampowered.com/app/371660/?l=french"
     },
@@ -56,7 +56,7 @@
         "score": 5,
         "label": "Mitigées",
         "percent": 69,
-        "total": 73415
+        "total": 73427
       },
       "url": "https://store.steampowered.com/app/924970/?l=french"
     },
@@ -87,7 +87,7 @@
         "score": 8,
         "label": "Très positives",
         "percent": 90,
-        "total": 65745
+        "total": 65758
       },
       "url": "https://store.steampowered.com/app/209000/?l=french"
     },
@@ -149,7 +149,7 @@
         "score": 8,
         "label": "Très positives",
         "percent": 87,
-        "total": 27042
+        "total": 27056
       },
       "url": "https://store.steampowered.com/app/629820/?l=french"
     },
@@ -178,7 +178,7 @@
         "score": 8,
         "label": "Très positives",
         "percent": 89,
-        "total": 5514
+        "total": 5516
       },
       "url": "https://store.steampowered.com/app/742300/?l=french"
     },
@@ -209,7 +209,7 @@
         "score": 6,
         "label": "Plutôt positives",
         "percent": 75,
-        "total": 2006
+        "total": 2007
       },
       "url": "https://store.steampowered.com/app/1589120/?l=french"
     },
@@ -239,7 +239,7 @@
         "score": 8,
         "label": "Très positives",
         "percent": 93,
-        "total": 73097
+        "total": 73136
       },
       "url": "https://store.steampowered.com/app/752590/?l=french"
     },
@@ -270,7 +270,7 @@
         "score": 8,
         "label": "Très positives",
         "percent": 93,
-        "total": 12706
+        "total": 12712
       },
       "url": "https://store.steampowered.com/app/1944430/?l=french"
     },
@@ -299,7 +299,7 @@
         "score": 8,
         "label": "Très positives",
         "percent": 92,
-        "total": 44344
+        "total": 44353
       },
       "url": "https://store.steampowered.com/app/675010/?l=french"
     },
@@ -329,7 +329,7 @@
         "score": 8,
         "label": "Très positives",
         "percent": 85,
-        "total": 14992
+        "total": 14994
       },
       "url": "https://store.steampowered.com/app/327030/?l=french"
     },
@@ -362,7 +362,7 @@
         "score": 8,
         "label": "Très positives",
         "percent": 80,
-        "total": 2365
+        "total": 2367
       },
       "url": "https://store.steampowered.com/app/996770/?l=french"
     },
@@ -393,7 +393,7 @@
         "score": 9,
         "label": "Extrêmement positives",
         "percent": 95,
-        "total": 3630
+        "total": 3631
       },
       "url": "https://store.steampowered.com/app/251470/?l=french"
     },
@@ -455,7 +455,7 @@
         "score": 9,
         "label": "Extrêmement positives",
         "percent": 98,
-        "total": 266211
+        "total": 266237
       },
       "url": "https://store.steampowered.com/app/1794680/?l=french"
     },
@@ -549,7 +549,7 @@
         "score": 8,
         "label": "Très positives",
         "percent": 81,
-        "total": 6639
+        "total": 6641
       },
       "url": "https://store.steampowered.com/app/1368030/?l=french"
     },
@@ -641,7 +641,7 @@
         "score": 8,
         "label": "Très positives",
         "percent": 90,
-        "total": 11432
+        "total": 11433
       },
       "url": "https://store.steampowered.com/app/1286350/?l=french"
     },
@@ -702,7 +702,7 @@
         "score": 8,
         "label": "Très positives",
         "percent": 93,
-        "total": 4780
+        "total": 4782
       },
       "url": "https://store.steampowered.com/app/1521580/?l=french"
     },
@@ -736,7 +736,7 @@
         "score": 8,
         "label": "Très positives",
         "percent": 90,
-        "total": 21816
+        "total": 21818
       },
       "url": "https://store.steampowered.com/app/394690/?l=french"
     },
@@ -744,9 +744,9 @@
       "appid": 312520,
       "name": "Rain World",
       "image": "https://cdn.akamai.steamstatic.com/steam/apps/312520/library_600x900.jpg",
-      "header": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/312520/dc5bd100e86dbdb088e7ff17cdb601e7eb2e00bc/header.jpg?t=1786047879",
+      "header": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/312520/dc5bd100e86dbdb088e7ff17cdb601e7eb2e00bc/header.jpg?t=1791223542",
       "short": "Vous êtes un chat-limace nomade, à la fois proie et prédateur, qui évolue dans un écosystème corrompu. Muni de votre lance, affrontez les friches industrielles et chassez pour survivre. Prenez garde.... D'autres créatures, bien plus imposantes, font de même, et raffolent des chats-limaces.",
-      "about": "<p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/312520/extras/87535af42d5647fb7da1883939eb12b4.poster.avif?t=1786047879\" width=780 height=250 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/312520/extras/87535af42d5647fb7da1883939eb12b4.webm?t=1786047879\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/312520/extras/87535af42d5647fb7da1883939eb12b4.mp4?t=1786047879\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" >Vous êtes un chat-limace. Le monde qui vous entoure est dangereux, et vous devez l’affronter seul. Séparé de votre famille à la suite d'un déluge dévastateur, vous devez trouver de la nourriture et un abri à chaque pluie torrentielle qui menace de vous engloutir. Escaladez les vestiges d’une civilisation ancienne, échappez aux griffes de prédateurs féroces, et parcourez de nouvelles terres regorgeant de créatures étranges et de mystères enfouis. Retrouvez votre famille avant de finir en chair à saucisse !</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/312520/extras/811ec7034a99eb80a328605f1f35881c.poster.avif?t=1786047879\" width=780 height=250 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/312520/extras/811ec7034a99eb80a328605f1f35881c.webm?t=1786047879\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/312520/extras/811ec7034a99eb80a328605f1f35881c.mp4?t=1786047879\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" >Inspiré par l’esthétisme et la simplicité des jeux 16 bits classiques, ce jeu de plates-formes et de survie exige de la réflexion, aussi bien pour attraper vos proies que pour échapper à vos dangereux prédateurs. Les ennemis que vous rencontrerez seront rusés, dangereux et infatigables, toujours prêts à bondir sur vous, et même sur leurs congénères. En tant que petit chat-limace tout doux, vous devrez compter sur votre discrétion et votre réflexion plutôt que sur la force. Apprivoisez l'écosystème et exploitez ses forces pour vous en sortir. Grâce à cela, vous pourriez peut-être survivre à... Rain World !</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/312520/extras/8ef6a5269497d0cd39170c6c4917e55c.poster.avif?t=1786047879\" width=780 height=250 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/312520/extras/8ef6a5269497d0cd39170c6c4917e55c.webm?t=1786047879\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/312520/extras/8ef6a5269497d0cd39170c6c4917e55c.mp4?t=1786047879\" type=\"video/mp4\"></video></span></p>",
+      "about": "<p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/312520/extras/87535af42d5647fb7da1883939eb12b4.poster.avif?t=1791223542\" width=780 height=250 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/312520/extras/87535af42d5647fb7da1883939eb12b4.webm?t=1791223542\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/312520/extras/87535af42d5647fb7da1883939eb12b4.mp4?t=1791223542\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" >Vous êtes un chat-limace. Le monde qui vous entoure est dangereux, et vous devez l’affronter seul. Séparé de votre famille à la suite d'un déluge dévastateur, vous devez trouver de la nourriture et un abri à chaque pluie torrentielle qui menace de vous engloutir. Escaladez les vestiges d’une civilisation ancienne, échappez aux griffes de prédateurs féroces, et parcourez de nouvelles terres regorgeant de créatures étranges et de mystères enfouis. Retrouvez votre famille avant de finir en chair à saucisse !</p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/312520/extras/811ec7034a99eb80a328605f1f35881c.poster.avif?t=1791223542\" width=780 height=250 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/312520/extras/811ec7034a99eb80a328605f1f35881c.webm?t=1791223542\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/312520/extras/811ec7034a99eb80a328605f1f35881c.mp4?t=1791223542\" type=\"video/mp4\"></video></span></p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" >Inspiré par l’esthétisme et la simplicité des jeux 16 bits classiques, ce jeu de plates-formes et de survie exige de la réflexion, aussi bien pour attraper vos proies que pour échapper à vos dangereux prédateurs. Les ennemis que vous rencontrerez seront rusés, dangereux et infatigables, toujours prêts à bondir sur vous, et même sur leurs congénères. En tant que petit chat-limace tout doux, vous devrez compter sur votre discrétion et votre réflexion plutôt que sur la force. Apprivoisez l'écosystème et exploitez ses forces pour vous en sortir. Grâce à cela, vous pourriez peut-être survivre à... Rain World !</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" ><span class=\"bb_img_ctn\"><video class=\"bb_img\" autoplay muted loop playsinline poster=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/312520/extras/8ef6a5269497d0cd39170c6c4917e55c.poster.avif?t=1791223542\" width=780 height=250 ><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/312520/extras/8ef6a5269497d0cd39170c6c4917e55c.webm?t=1791223542\" type=\"video/webm; codecs=vp9\"><source src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/312520/extras/8ef6a5269497d0cd39170c6c4917e55c.mp4?t=1791223542\" type=\"video/mp4\"></video></span></p>",
       "genres": [
         "Action",
         "Aventure",
@@ -767,7 +767,7 @@
         "score": 8,
         "label": "Très positives",
         "percent": 94,
-        "total": 57788
+        "total": 57826
       },
       "url": "https://store.steampowered.com/app/312520/?l=french"
     },
@@ -798,7 +798,7 @@
         "score": 9,
         "label": "Extrêmement positives",
         "percent": 95,
-        "total": 126930
+        "total": 126978
       },
       "url": "https://store.steampowered.com/app/2835570/?l=french"
     },
@@ -828,7 +828,7 @@
         "score": 8,
         "label": "Très positives",
         "percent": 92,
-        "total": 29011
+        "total": 29025
       },
       "url": "https://store.steampowered.com/app/2138710/?l=french"
     },
@@ -859,7 +859,7 @@
         "score": 8,
         "label": "Très positives",
         "percent": 88,
-        "total": 1284
+        "total": 1288
       },
       "url": "https://store.steampowered.com/app/1579880/?l=french"
     },
@@ -888,7 +888,7 @@
         "score": 8,
         "label": "Très positives",
         "percent": 94,
-        "total": 39239
+        "total": 39245
       },
       "url": "https://store.steampowered.com/app/40800/?l=french"
     },
@@ -949,7 +949,7 @@
         "score": 9,
         "label": "Extrêmement positives",
         "percent": 97,
-        "total": 17173
+        "total": 17174
       },
       "url": "https://store.steampowered.com/app/341800/?l=french"
     },
@@ -980,7 +980,7 @@
         "score": 9,
         "label": "Extrêmement positives",
         "percent": 96,
-        "total": 24505
+        "total": 24512
       },
       "url": "https://store.steampowered.com/app/1127500/?l=french"
     },
@@ -1012,7 +1012,7 @@
         "score": 8,
         "label": "Très positives",
         "percent": 86,
-        "total": 14939
+        "total": 14942
       },
       "url": "https://store.steampowered.com/app/1522820/?l=french"
     },
@@ -1042,7 +1042,7 @@
         "score": 9,
         "label": "Extrêmement positives",
         "percent": 96,
-        "total": 88013
+        "total": 88056
       },
       "url": "https://store.steampowered.com/app/35140/?l=french"
     },
@@ -1073,7 +1073,7 @@
         "score": 8,
         "label": "Très positives",
         "percent": 88,
-        "total": 116524
+        "total": 116536
       },
       "url": "https://store.steampowered.com/app/976310/?l=french"
     },
@@ -1136,7 +1136,7 @@
         "score": 5,
         "label": "Mitigées",
         "percent": 67,
-        "total": 25333
+        "total": 25335
       },
       "url": "https://store.steampowered.com/app/1496790/?l=french"
     },
@@ -1199,7 +1199,7 @@
         "score": 5,
         "label": "Mitigées",
         "percent": 69,
-        "total": 45487
+        "total": 45509
       },
       "url": "https://store.steampowered.com/app/2208920/?l=french"
     },
@@ -1231,7 +1231,7 @@
         "score": 6,
         "label": "Plutôt positives",
         "percent": 77,
-        "total": 5256
+        "total": 5257
       },
       "url": "https://store.steampowered.com/app/1607680/?l=french"
     },
@@ -1292,7 +1292,7 @@
         "score": 6,
         "label": "Plutôt positives",
         "percent": 77,
-        "total": 29972
+        "total": 30001
       },
       "url": "https://store.steampowered.com/app/934700/?l=french"
     },
@@ -1325,7 +1325,7 @@
         "score": 8,
         "label": "Très positives",
         "percent": 87,
-        "total": 8103
+        "total": 8105
       },
       "url": "https://store.steampowered.com/app/970830/?l=french"
     }
