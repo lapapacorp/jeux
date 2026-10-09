@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-08T05:25:45.450Z",
+  "updatedAt": "2026-10-09T05:25:40.875Z",
   "games": [
     {
       "appid": 371660,
@@ -18,16 +18,16 @@
       ],
       "price": {
         "free": false,
-        "final": "7,49€",
-        "initial": "29,99€",
-        "discount": 75
+        "final": "29,99€",
+        "initial": null,
+        "discount": 0
       },
       "metacritic": 74,
       "reviews": {
         "score": 8,
         "label": "Très positives",
         "percent": 86,
-        "total": 41578
+        "total": 41586
       },
       "url": "https://store.steampowered.com/app/371660/?l=french"
     },
@@ -47,16 +47,16 @@
       ],
       "price": {
         "free": false,
-        "final": "5,99€",
-        "initial": "59,99€",
-        "discount": 90
+        "final": "59,99€",
+        "initial": null,
+        "discount": 0
       },
       "metacritic": 77,
       "reviews": {
         "score": 5,
         "label": "Mitigées",
         "percent": 69,
-        "total": 73451
+        "total": 73461
       },
       "url": "https://store.steampowered.com/app/924970/?l=french"
     },
@@ -78,16 +78,16 @@
       ],
       "price": {
         "free": false,
-        "final": "3,99€",
-        "initial": "19,99€",
-        "discount": 80
+        "final": "19,99€",
+        "initial": null,
+        "discount": 0
       },
       "metacritic": 74,
       "reviews": {
         "score": 8,
         "label": "Très positives",
         "percent": 90,
-        "total": 65784
+        "total": 65789
       },
       "url": "https://store.steampowered.com/app/209000/?l=french"
     },
@@ -108,16 +108,16 @@
       ],
       "price": {
         "free": false,
-        "final": "0,97€",
-        "initial": "9,75€",
-        "discount": 90
+        "final": "9,75€",
+        "initial": null,
+        "discount": 0
       },
       "metacritic": null,
       "reviews": {
         "score": 5,
         "label": "Mitigées",
         "percent": 46,
-        "total": 1887
+        "total": 1886
       },
       "url": "https://store.steampowered.com/app/1120480/?l=french"
     },
@@ -140,16 +140,16 @@
       ],
       "price": {
         "free": false,
-        "final": "5,09€",
-        "initial": "33,99€",
-        "discount": 85
+        "final": "33,99€",
+        "initial": null,
+        "discount": 0
       },
       "metacritic": 70,
       "reviews": {
         "score": 8,
         "label": "Très positives",
         "percent": 87,
-        "total": 27081
+        "total": 27092
       },
       "url": "https://store.steampowered.com/app/629820/?l=french"
     },
@@ -169,16 +169,16 @@
       ],
       "price": {
         "free": false,
-        "final": "9,89€",
-        "initial": "29,99€",
-        "discount": 67
+        "final": "29,99€",
+        "initial": null,
+        "discount": 0
       },
       "metacritic": null,
       "reviews": {
         "score": 8,
         "label": "Très positives",
         "percent": 89,
-        "total": 5519
+        "total": 5521
       },
       "url": "https://store.steampowered.com/app/742300/?l=french"
     },
@@ -200,9 +200,9 @@
       ],
       "price": {
         "free": false,
-        "final": "6,24€",
-        "initial": "24,99€",
-        "discount": 75
+        "final": "24,99€",
+        "initial": null,
+        "discount": 0
       },
       "metacritic": null,
       "reviews": {
@@ -230,16 +230,16 @@
       ],
       "price": {
         "free": false,
-        "final": "3,99€",
-        "initial": "39,99€",
-        "discount": 90
+        "final": "39,99€",
+        "initial": null,
+        "discount": 0
       },
       "metacritic": 81,
       "reviews": {
         "score": 8,
         "label": "Très positives",
         "percent": 93,
-        "total": 73188
+        "total": 73214
       },
       "url": "https://store.steampowered.com/app/752590/?l=french"
     },
@@ -261,16 +261,16 @@
       ],
       "price": {
         "free": false,
-        "final": "4,90€",
-        "initial": "24,50€",
-        "discount": 80
+        "final": "24,50€",
+        "initial": null,
+        "discount": 0
       },
       "metacritic": null,
       "reviews": {
         "score": 8,
         "label": "Très positives",
         "percent": 93,
-        "total": 12724
+        "total": 12736
       },
       "url": "https://store.steampowered.com/app/1944430/?l=french"
     },
@@ -290,16 +290,16 @@
       ],
       "price": {
         "free": false,
-        "final": "3,99€",
-        "initial": "19,99€",
-        "discount": 80
+        "final": "19,99€",
+        "initial": null,
+        "discount": 0
       },
       "metacritic": null,
       "reviews": {
         "score": 8,
         "label": "Très positives",
         "percent": 92,
-        "total": 44380
+        "total": 44399
       },
       "url": "https://store.steampowered.com/app/675010/?l=french"
     },
@@ -320,16 +320,16 @@
       ],
       "price": {
         "free": false,
-        "final": "5,99€",
-        "initial": "29,99€",
-        "discount": 80
+        "final": "29,99€",
+        "initial": null,
+        "discount": 0
       },
       "metacritic": 79,
       "reviews": {
         "score": 8,
         "label": "Très positives",
         "percent": 85,
-        "total": 14999
+        "total": 15000
       },
       "url": "https://store.steampowered.com/app/327030/?l=french"
     },
@@ -353,16 +353,16 @@
       ],
       "price": {
         "free": false,
-        "final": "2,29€",
-        "initial": "22,99€",
-        "discount": 90
+        "final": "22,99€",
+        "initial": null,
+        "discount": 0
       },
       "metacritic": 79,
       "reviews": {
         "score": 8,
         "label": "Très positives",
         "percent": 80,
-        "total": 2369
+        "total": 2370
       },
       "url": "https://store.steampowered.com/app/996770/?l=french"
     },
@@ -384,16 +384,16 @@
       ],
       "price": {
         "free": false,
-        "final": "2,79€",
-        "initial": "13,99€",
-        "discount": 80
+        "final": "13,99€",
+        "initial": null,
+        "discount": 0
       },
       "metacritic": 87,
       "reviews": {
         "score": 9,
         "label": "Extrêmement positives",
         "percent": 95,
-        "total": 3630
+        "total": 3631
       },
       "url": "https://store.steampowered.com/app/251470/?l=french"
     },
@@ -414,9 +414,9 @@
       ],
       "price": {
         "free": false,
-        "final": "5,17€",
-        "initial": "14,79€",
-        "discount": 65
+        "final": "14,79€",
+        "initial": null,
+        "discount": 0
       },
       "metacritic": 78,
       "reviews": {
@@ -446,16 +446,16 @@
       ],
       "price": {
         "free": false,
-        "final": "3,74€",
-        "initial": "4,99€",
-        "discount": 25
+        "final": "4,99€",
+        "initial": null,
+        "discount": 0
       },
       "metacritic": 86,
       "reviews": {
         "score": 9,
         "label": "Extrêmement positives",
         "percent": 98,
-        "total": 266263
+        "total": 266281
       },
       "url": "https://store.steampowered.com/app/1794680/?l=french"
     },
@@ -508,16 +508,16 @@
       ],
       "price": {
         "free": false,
-        "final": "1,95€",
-        "initial": "19,50€",
-        "discount": 90
+        "final": "19,50€",
+        "initial": null,
+        "discount": 0
       },
       "metacritic": 74,
       "reviews": {
         "score": 6,
         "label": "Plutôt positives",
         "percent": 72,
-        "total": 750
+        "total": 751
       },
       "url": "https://store.steampowered.com/app/751820/?l=french"
     },
@@ -540,16 +540,16 @@
       ],
       "price": {
         "free": false,
-        "final": "10,49€",
-        "initial": "20,99€",
-        "discount": 50
+        "final": "20,99€",
+        "initial": null,
+        "discount": 0
       },
       "metacritic": null,
       "reviews": {
         "score": 8,
         "label": "Très positives",
         "percent": 81,
-        "total": 6643
+        "total": 6644
       },
       "url": "https://store.steampowered.com/app/1368030/?l=french"
     },
@@ -570,9 +570,9 @@
       ],
       "price": {
         "free": false,
-        "final": "11,99€",
-        "initial": "39,99€",
-        "discount": 70
+        "final": "39,99€",
+        "initial": null,
+        "discount": 0
       },
       "metacritic": null,
       "reviews": {
@@ -610,7 +610,7 @@
         "score": 6,
         "label": "Plutôt positives",
         "percent": 75,
-        "total": 1753
+        "total": 1752
       },
       "url": "https://store.steampowered.com/app/828900/?l=french"
     },
@@ -632,16 +632,16 @@
       ],
       "price": {
         "free": false,
-        "final": "4,87€",
-        "initial": "19,50€",
-        "discount": 75
+        "final": "19,50€",
+        "initial": null,
+        "discount": 0
       },
       "metacritic": null,
       "reviews": {
         "score": 8,
         "label": "Très positives",
         "percent": 90,
-        "total": 11433
+        "total": 11434
       },
       "url": "https://store.steampowered.com/app/1286350/?l=french"
     },
@@ -670,7 +670,7 @@
         "score": 6,
         "label": "Plutôt positives",
         "percent": 79,
-        "total": 4445
+        "total": 4446
       },
       "url": "https://store.steampowered.com/app/953880/?l=french"
     },
@@ -693,16 +693,16 @@
       ],
       "price": {
         "free": false,
-        "final": "3,99€",
-        "initial": "9,99€",
-        "discount": 60
+        "final": "9,99€",
+        "initial": null,
+        "discount": 0
       },
       "metacritic": null,
       "reviews": {
         "score": 8,
         "label": "Très positives",
         "percent": 93,
-        "total": 4784
+        "total": 4786
       },
       "url": "https://store.steampowered.com/app/1521580/?l=french"
     },
@@ -727,16 +727,16 @@
       ],
       "price": {
         "free": false,
-        "final": "8,77€",
-        "initial": "19,50€",
-        "discount": 55
+        "final": "19,50€",
+        "initial": null,
+        "discount": 0
       },
       "metacritic": null,
       "reviews": {
         "score": 8,
         "label": "Très positives",
         "percent": 90,
-        "total": 21824
+        "total": 21828
       },
       "url": "https://store.steampowered.com/app/394690/?l=french"
     },
@@ -758,16 +758,16 @@
       ],
       "price": {
         "free": false,
-        "final": "10,70€",
-        "initial": "23,79€",
-        "discount": 55
+        "final": "23,79€",
+        "initial": null,
+        "discount": 0
       },
       "metacritic": 66,
       "reviews": {
         "score": 8,
         "label": "Très positives",
         "percent": 94,
-        "total": 57890
+        "total": 57921
       },
       "url": "https://store.steampowered.com/app/312520/?l=french"
     },
@@ -789,16 +789,16 @@
       ],
       "price": {
         "free": false,
-        "final": "1,79€",
-        "initial": "2,99€",
-        "discount": 40
+        "final": "2,99€",
+        "initial": null,
+        "discount": 0
       },
       "metacritic": null,
       "reviews": {
         "score": 9,
         "label": "Extrêmement positives",
         "percent": 95,
-        "total": 127080
+        "total": 127138
       },
       "url": "https://store.steampowered.com/app/2835570/?l=french"
     },
@@ -828,7 +828,7 @@
         "score": 8,
         "label": "Très positives",
         "percent": 92,
-        "total": 29062
+        "total": 29085
       },
       "url": "https://store.steampowered.com/app/2138710/?l=french"
     },
@@ -850,16 +850,16 @@
       ],
       "price": {
         "free": false,
-        "final": "9,80€",
-        "initial": "24,50€",
-        "discount": 60
+        "final": "24,50€",
+        "initial": null,
+        "discount": 0
       },
       "metacritic": null,
       "reviews": {
         "score": 8,
         "label": "Très positives",
         "percent": 88,
-        "total": 1290
+        "total": 1291
       },
       "url": "https://store.steampowered.com/app/1579880/?l=french"
     },
@@ -879,16 +879,16 @@
       ],
       "price": {
         "free": false,
-        "final": "2,23€",
-        "initial": "13,99€",
-        "discount": 84
+        "final": "13,99€",
+        "initial": null,
+        "discount": 0
       },
       "metacritic": 87,
       "reviews": {
         "score": 8,
         "label": "Très positives",
         "percent": 94,
-        "total": 39249
+        "total": 39257
       },
       "url": "https://store.steampowered.com/app/40800/?l=french"
     },
@@ -911,9 +911,9 @@
       ],
       "price": {
         "free": false,
-        "final": "1,95€",
-        "initial": "9,75€",
-        "discount": 80
+        "final": "9,75€",
+        "initial": null,
+        "discount": 0
       },
       "metacritic": null,
       "reviews": {
@@ -940,16 +940,16 @@
       ],
       "price": {
         "free": false,
-        "final": "7,39€",
-        "initial": "14,79€",
-        "discount": 50
+        "final": "14,79€",
+        "initial": null,
+        "discount": 0
       },
       "metacritic": 71,
       "reviews": {
         "score": 9,
         "label": "Extrêmement positives",
         "percent": 97,
-        "total": 17179
+        "total": 17181
       },
       "url": "https://store.steampowered.com/app/341800/?l=french"
     },
@@ -971,16 +971,16 @@
       ],
       "price": {
         "free": false,
-        "final": "6,55€",
-        "initial": "8,19€",
-        "discount": 20
+        "final": "8,19€",
+        "initial": null,
+        "discount": 0
       },
       "metacritic": 87,
       "reviews": {
         "score": 9,
         "label": "Extrêmement positives",
         "percent": 96,
-        "total": 24516
+        "total": 24520
       },
       "url": "https://store.steampowered.com/app/1127500/?l=french"
     },
@@ -1003,16 +1003,16 @@
       ],
       "price": {
         "free": false,
-        "final": "6,24€",
-        "initial": "24,99€",
-        "discount": 75
+        "final": "24,99€",
+        "initial": null,
+        "discount": 0
       },
       "metacritic": null,
       "reviews": {
         "score": 8,
         "label": "Très positives",
         "percent": 86,
-        "total": 14946
+        "total": 14948
       },
       "url": "https://store.steampowered.com/app/1522820/?l=french"
     },
@@ -1033,16 +1033,16 @@
       ],
       "price": {
         "free": false,
-        "final": "2,99€",
-        "initial": "19,99€",
-        "discount": 85
+        "final": "19,99€",
+        "initial": null,
+        "discount": 0
       },
       "metacritic": 91,
       "reviews": {
         "score": 9,
         "label": "Extrêmement positives",
         "percent": 96,
-        "total": 88112
+        "total": 88135
       },
       "url": "https://store.steampowered.com/app/35140/?l=french"
     },
@@ -1064,16 +1064,16 @@
       ],
       "price": {
         "free": false,
-        "final": "4,99€",
-        "initial": "49,99€",
-        "discount": 90
+        "final": "49,99€",
+        "initial": null,
+        "discount": 0
       },
       "metacritic": 82,
       "reviews": {
         "score": 8,
         "label": "Très positives",
         "percent": 88,
-        "total": 116565
+        "total": 116584
       },
       "url": "https://store.steampowered.com/app/976310/?l=french"
     },
@@ -1095,9 +1095,9 @@
       ],
       "price": {
         "free": false,
-        "final": "4,99€",
-        "initial": "49,99€",
-        "discount": 90
+        "final": "49,99€",
+        "initial": null,
+        "discount": 0
       },
       "metacritic": null,
       "reviews": {
@@ -1127,16 +1127,16 @@
       ],
       "price": {
         "free": false,
-        "final": "8,99€",
-        "initial": "59,99€",
-        "discount": 85
+        "final": "59,99€",
+        "initial": null,
+        "discount": 0
       },
       "metacritic": null,
       "reviews": {
         "score": 5,
         "label": "Mitigées",
         "percent": 67,
-        "total": 25339
+        "total": 25343
       },
       "url": "https://store.steampowered.com/app/1496790/?l=french"
     },
@@ -1159,9 +1159,9 @@
       ],
       "price": {
         "free": false,
-        "final": "4,99€",
-        "initial": "19,99€",
-        "discount": 75
+        "final": "19,99€",
+        "initial": null,
+        "discount": 0
       },
       "metacritic": null,
       "reviews": {
@@ -1190,16 +1190,16 @@
       ],
       "price": {
         "free": false,
-        "final": "11,99€",
-        "initial": "59,99€",
-        "discount": 80
+        "final": "59,99€",
+        "initial": null,
+        "discount": 0
       },
       "metacritic": null,
       "reviews": {
         "score": 5,
         "label": "Mitigées",
         "percent": 69,
-        "total": 45557
+        "total": 45585
       },
       "url": "https://store.steampowered.com/app/2208920/?l=french"
     },
@@ -1222,16 +1222,16 @@
       ],
       "price": {
         "free": false,
-        "final": "5,91€",
-        "initial": "14,79€",
-        "discount": 60
+        "final": "14,79€",
+        "initial": null,
+        "discount": 0
       },
       "metacritic": null,
       "reviews": {
         "score": 6,
         "label": "Plutôt positives",
         "percent": 77,
-        "total": 5259
+        "total": 5261
       },
       "url": "https://store.steampowered.com/app/1607680/?l=french"
     },
@@ -1253,16 +1253,16 @@
       ],
       "price": {
         "free": false,
-        "final": "5,79€",
-        "initial": "28,99€",
-        "discount": 80
+        "final": "28,99€",
+        "initial": null,
+        "discount": 0
       },
       "metacritic": 77,
       "reviews": {
         "score": 8,
         "label": "Très positives",
         "percent": 82,
-        "total": 3237
+        "total": 3238
       },
       "url": "https://store.steampowered.com/app/1282410/?l=french"
     },
@@ -1283,16 +1283,16 @@
       ],
       "price": {
         "free": false,
-        "final": "4,99€",
-        "initial": "49,99€",
-        "discount": 90
+        "final": "49,99€",
+        "initial": null,
+        "discount": 0
       },
       "metacritic": null,
       "reviews": {
         "score": 6,
         "label": "Plutôt positives",
         "percent": 77,
-        "total": 30048
+        "total": 30075
       },
       "url": "https://store.steampowered.com/app/934700/?l=french"
     },
@@ -1316,16 +1316,16 @@
       ],
       "price": {
         "free": false,
-        "final": "5,24€",
-        "initial": "34,99€",
-        "discount": 85
+        "final": "34,99€",
+        "initial": null,
+        "discount": 0
       },
       "metacritic": 72,
       "reviews": {
         "score": 8,
         "label": "Très positives",
         "percent": 87,
-        "total": 8106
+        "total": 8109
       },
       "url": "https://store.steampowered.com/app/970830/?l=french"
     }
