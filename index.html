@@ -255,6 +255,7 @@
   const $ = (s) => document.querySelector(s);
   const grid = $('#grid'), panel = $('#panel'), panelContent = $('#panelContent');
   let games = [], reservations = {}, activeId = null, lastFocus = null;
+  let sent = {};
   let currentUser = null, credits = 0;
 
   const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -301,9 +302,12 @@
 
   const priceValue = (g) => g.price?.free ? 0 : (parseFloat((g.price?.final || '').replace(/[^\d,]/g, '').replace(',', '.')) || Infinity);
 
+  const isAdmin = () => currentUser === 'papajoue';
+  const shownGames = () => games.filter((g) => isAdmin() || !sent[g.appid]);
+
   function visibleGames() {
     const q = $('#q').value.trim().toLowerCase();
-    let list = games.filter((g) => !q || g.name.toLowerCase().includes(q) || (g.genres || []).some((x) => x.toLowerCase().includes(q)));
+    let list = shownGames().filter((g) => !q || g.name.toLowerCase().includes(q) || (g.genres || []).some((x) => x.toLowerCase().includes(q)));
     if ($('#onlyFree').checked) list = list.filter((g) => !reservations[g.appid]);
     const s = $('#sort').value;
     const by = {
@@ -318,14 +322,15 @@
 
   function render() {
     const list = visibleGames();
-    const free = games.filter((g) => !reservations[g.appid]).length;
-    $('#count').textContent = `${games.length} jeux, ${free} encore disponibles`;
+    const pool = shownGames();
+    const free = pool.filter((g) => !reservations[g.appid] && !sent[g.appid]).length;
+    $('#count').textContent = `${pool.length} jeux, ${free} encore disponibles`;
     if (!list.length) { grid.innerHTML = '<p class="empty">Aucun jeu ne correspond à ta recherche.</p>'; return; }
     grid.innerHTML = list.map((g) => {
       const by = reservations[g.appid];
-      return `<button class="card ${by ? 'reserved' : ''} ${g.appid === activeId ? 'active' : ''}" data-id="${g.appid}" aria-label="${esc(g.name)}${by ? ', réservé' : ''}">
+      return `<button class="card ${by || sent[g.appid] ? 'reserved' : ''} ${g.appid === activeId ? 'active' : ''}" data-id="${g.appid}" aria-label="${esc(g.name)}${by ? ', réservé' : ''}">
         <img class="cover" loading="lazy" src="${esc(g.image)}" alt="Jaquette de ${esc(g.name)}" data-fallback="${esc(g.header)}">
-        ${by ? `<span class="ribbon">Réservé par ${esc(by)}</span>` : ''}
+        ${sent[g.appid] ? `<span class="ribbon">Envoyé</span>` : by ? `<span class="ribbon">Réservé par ${esc(by)}</span>` : ''}
         <span class="hover-info">
           <span class="name">${esc(g.name)}</span>
           <span class="row">${priceHTML(g.price)}${metaHTML(g)}</span>
@@ -350,7 +355,8 @@
       <img class="banner" src="${esc(g.header)}" alt="">
       <div class="body">
         <h2>${esc(g.name)}</h2>
-        ${by ? `<p class="status">Ce jeu est réservé par <strong>${esc(by)}</strong>.</p>` : reserveAreaHTML(g)}
+        ${sent[id] ? `<p class="status">Ce jeu a déjà été envoyé.</p>` : by ? `<p class="status">Ce jeu est réservé par <strong>${esc(by)}</strong>.</p>` : reserveAreaHTML(g)}
+        ${isAdmin() ? `<p><button class="btn" id="adminSentBtn" type="button">${sent[id] ? '↩ Remettre ce jeu dans la liste' : '✅ Jeu envoyé : le retirer de la liste'}</button></p>` : ''}
         <div class="line">${priceHTML(g.price)}${metaHTML(g)}${ratingHTML(g, true)}</div>
         ${g.short ? `<p class="short">${esc(g.short)}</p>` : ''}
         <dl>
@@ -366,6 +372,7 @@
     document.body.classList.add('panel-open');
     panel.setAttribute('aria-hidden', 'false');
     document.querySelectorAll('.card').forEach((c) => c.classList.toggle('active', Number(c.dataset.id) === id));
+    const ab = $('#adminSentBtn'); if (ab) ab.addEventListener('click', () => markSent(id, !!sent[id]));
     const rb = $('#reserveBtn');
     if (rb) rb.addEventListener('click', () => reserveGame(g.appid));
     $('#close').focus({ preventScroll: true });
@@ -459,6 +466,39 @@
       credits = rows[0]?.credits ?? 0;
     } catch { credits = 0; }
   }
+  async function loadSent() {
+    try {
+      const res = await fetch(`${SUPABASE_URL}/rest/v1/sent_games?select=appid`,
+        { headers: { apikey: SUPABASE_ANON_KEY, Authorization: `Bearer ${SUPABASE_ANON_KEY}` } });
+      const rows = await res.json();
+      sent = {};
+      if (Array.isArray(rows)) rows.forEach((r) => { sent[r.appid] = true; });
+    } catch { sent = {}; }
+  }
+
+  // ---------- Admin : marquer un jeu comme envoyé (code secret vérifié côté Supabase) ----------
+  async function markSent(appid, undo) {
+    let code = sessionStorage.getItem('adminCode');
+    if (!code) { code = prompt('Code admin :'); if (!code) return; }
+    const g = games.find((x) => x.appid === appid);
+    try {
+      const res = await fetch(`${SUPABASE_URL}/rest/v1/rpc/mark_game_sent`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', apikey: SUPABASE_ANON_KEY, Authorization: `Bearer ${SUPABASE_ANON_KEY}` },
+        body: JSON.stringify({ p_appid: appid, p_code: code, p_name: g?.name || null, p_undo: undo }),
+      });
+      const result = await res.json();
+      if (result === 'ok') {
+        sessionStorage.setItem('adminCode', code);
+        if (undo) delete sent[appid]; else sent[appid] = true;
+        render(); openPanel(appid);
+      } else {
+        sessionStorage.removeItem('adminCode');
+        alert(result === 'forbidden' ? 'Code admin incorrect.' : 'Erreur, réessaie.');
+      }
+    } catch { alert('Erreur réseau, réessaie.'); }
+  }
+
   async function loadReservations() {
     try {
       const res = await fetch(`${SUPABASE_URL}/rest/v1/reservations?select=appid,reserved_by&reserved_by=not.is.null`,
@@ -518,7 +558,7 @@
       grid.innerHTML = '<p class="empty">Impossible de charger games.json. Si tu ouvres le fichier directement depuis ton disque, lance plutôt un petit serveur local (ou passe par GitHub Pages).</p>';
       return;
     }
-    await loadReservations();
+    await Promise.all([loadReservations(), loadSent()]);
     if (currentUser) await fetchCredits(currentUser);
     renderAuth();
 
