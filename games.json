@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-02T13:32:01.178Z",
+  "updatedAt": "2026-11-03T12:54:40.521Z",
   "games": [
     {
       "appid": 371660,
@@ -221,9 +221,9 @@
       ],
       "price": {
         "free": false,
-        "final": "4,90€",
-        "initial": "24,50€",
-        "discount": 80
+        "final": "24,50€",
+        "initial": null,
+        "discount": 0
       },
       "metacritic": null,
       "reviews": null,
@@ -638,9 +638,9 @@
       ],
       "price": {
         "free": false,
-        "final": "10,70€",
-        "initial": "23,79€",
-        "discount": 55
+        "final": "23,79€",
+        "initial": null,
+        "discount": 0
       },
       "metacritic": 66,
       "reviews": null,
@@ -1078,9 +1078,9 @@
       ],
       "price": {
         "free": false,
-        "final": "4,99€",
-        "initial": "49,99€",
-        "discount": 90
+        "final": "49,99€",
+        "initial": null,
+        "discount": 0
       },
       "metacritic": null,
       "reviews": null,
