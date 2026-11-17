@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-16T13:41:20.603Z",
+  "updatedAt": "2026-11-17T14:26:27.743Z",
   "games": [
     {
       "appid": 371660,
@@ -802,7 +802,7 @@
       "appid": 1127500,
       "name": "Mini Motorways",
       "image": "https://cdn.akamai.steamstatic.com/steam/apps/1127500/library_600x900.jpg",
-      "header": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1127500/cb2bf5e828d15bf9c2fc46effd248badfccb3df2/header.jpg?t=1789703699",
+      "header": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1127500/cb2bf5e828d15bf9c2fc46effd248badfccb3df2/header.jpg?t=1794865148",
       "short": "Mini Motorways est un jeu de stratégie de conception d'une carte routière pour une ville en expansion. Construisez un réseau routier, une route après l'autre, pour créer une métropole en pleine agitation. Redessinez vos routes et placez vos autoroutes pour permettre à tout le monde de se déplacer.",
       "about": "<p class=\"bb_paragraph\" >Vous avez déjà rêvé de redéfinir le paysage urbain de votre ville pour en finir avec les embouteillages ? Mini Motorways est le jeu qu’il vous faut.</p><p class=\"bb_paragraph\" ></p><p class=\"bb_paragraph\" >Conçu par le studio qui a créé Mini Metro, Mini Motorways est un jeu de construction des routes qui parcourent une ville en expansion. Construisez un réseau routier afin de concevoir une métropole effervescente. Faites en sorte que le trafic reste fluide, et gérez les améliorations avec précaution afin de répondre aux demandes de votre réseau. Combien de temps pourrez-vous garder les villes du monde en mouvement ?</p><p class=\"bb_paragraph\" ></p><h2 class=\"bb_tag\" >Caractéristiques</h2><ul class=\"bb_ul\"><li><p class=\"bb_paragraph\" >Dessinez des routes dans des villes dynamiques qui grandissent et changent continuellement. Chaque partie est unique !</p></li><li><p class=\"bb_paragraph\" >Explorez de superbes cartes inspirées de villes du monde entier.</p></li><li><p class=\"bb_paragraph\" >Choisissez parmi une variété de mises à niveau pour répondre aux exigences de votre réseau routier en constante expansion : autoroutes, ronds-points, et plus encore !</p></li><li><p class=\"bb_paragraph\" >Construisez sans limite avec le mode Créatif ! Créez la ville de vos rêves exactement comme vous l'avez imaginée grâce à un nombre illimité d'améliorations et d'outils de personnalisation.</p></li><li><p class=\"bb_paragraph\" >Le mode Sans fin vous offre une expérience de jeu relaxante et vous permet de continuer à développer votre ville après la fin du jeu.</p></li><li><p class=\"bb_paragraph\" >Tentez notre mode Expert, qui propose des fonctionnalités comme les routes définitives et les améliorations limitées pour défi ultime.</p></li><li><p class=\"bb_paragraph\" >Sélectionnez différentes palettes de couleurs sur chaque carte, y compris les modes daltonien et nuit.</p></li><li><p class=\"bb_paragraph\" >Détendez-vous en écoutant une bande sonore réactive de Disasterpeace qui évolue en même temps que votre ville.</p></li><li><p class=\"bb_paragraph\" >Débloquez de nouvelles cartes et des accomplissements au fur et à mesure de votre maîtrise du jeu.</p></li><li><p class=\"bb_paragraph\" >Exportez des GIFs de votre ville pour les partager avec vos amis.</p></li><li><p class=\"bb_paragraph\" >Affrontez d'autres joueurs dans les défis quotidiens et hebdomadaires.</p></li></ul>",
       "genres": [
@@ -843,9 +843,9 @@
       ],
       "price": {
         "free": false,
-        "final": "6,24€",
-        "initial": "24,99€",
-        "discount": 75
+        "final": "24,99€",
+        "initial": null,
+        "discount": 0
       },
       "metacritic": null,
       "reviews": null,
@@ -974,9 +974,9 @@
       ],
       "price": {
         "free": false,
-        "final": "19,99€",
-        "initial": null,
-        "discount": 0
+        "final": "17,99€",
+        "initial": "19,99€",
+        "discount": 10
       },
       "metacritic": null,
       "reviews": null,
