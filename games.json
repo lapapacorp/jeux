@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-21T13:32:28.180Z",
+  "updatedAt": "2026-11-22T13:23:50.357Z",
   "games": [
     {
       "appid": 371660,
@@ -170,9 +170,9 @@
       ],
       "price": {
         "free": false,
-        "final": "24,99€",
-        "initial": null,
-        "discount": 0
+        "final": "6,24€",
+        "initial": "24,99€",
+        "discount": 75
       },
       "metacritic": null,
       "reviews": null,
